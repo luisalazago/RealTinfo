@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
+<SdlFSMPartition name="" needs_cleanup="FALSE">
+<SdlFSMSymbol identifier="SYM13" type="sdlText" text="/*Time to drop the Data Base to the User*/
+SIGNAL td;
+
+/*Last time to drop the Data Base*/
+SIGNAL lt;
+
+/*Timers (days)*/
+TIMER L := 90;
+TIMER time;" outline_color="-" background_color="-" center_coordinates="1047 123" dimensions="316 148" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM27" type="sdlComment" text="lt goes to the block Nube, then the process inside Nube
+send the signal to drop specific the database" outline_color="-" background_color="-" center_coordinates="992 551" dimensions="404 48" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM28" type="sdlText" text="/*Variables*/
+DCL
+  requerimiento request;" outline_color="-" background_color="-" center_coordinates="1046 303" dimensions="188 62" attached_symbol_id=""/>
+<StateTransitionBlock top_left_coordinates="61 95">
+<SdlFSMSymbol identifier="SYM2" type="sdlState" text="Senales" outline_color="-" background_color="-" center_coordinates="162 115" dimensions="68 40" attached_symbol_id=""/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM3" type="sdlInputSig" text="requestInfo(requerimiento)" outline_color="-" background_color="-" center_coordinates="162 167" dimensions="202 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM9" type="sdlSendSig" text="isInfo VIA cSer_Nube" outline_color="-" background_color="-" center_coordinates="162 219" dimensions="160 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM10" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="162 271" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM4" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="388 167" dimensions="90 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM11" type="sdlSendSig" text="errorFound VIA cAdministrativo" outline_color="-" background_color="-" center_coordinates="388 219" dimensions="230 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM12" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="388 271" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM14" type="sdlInputSig" text="time" outline_color="-" background_color="-" center_coordinates="582 167" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM15" type="sdlDecision" text="time &gt;= L - 7 AND
+time &lt; L" outline_color="-" background_color="-" center_coordinates="582 223" dimensions="138 48" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM16" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="582 279" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM18" type="sdlSendSig" text="td VIA cSer_Nube" outline_color="-" background_color="-" center_coordinates="582 331" dimensions="132 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM19" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="582 383" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM17" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="688 279" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM21" type="sdlDecision" text="time == L" outline_color="-" background_color="-" center_coordinates="582 447" dimensions="82 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM22" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="582 499" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM24" type="sdlSendSig" text="lt VIA cSer_Nube" outline_color="-" background_color="-" center_coordinates="582 551" dimensions="132 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM26" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="582 603" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM23" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="688 499" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM25" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="582 667" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.0" bottomMargin="1.0" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+</SdlFSMPartition>
+</SdlFSMDiagram>

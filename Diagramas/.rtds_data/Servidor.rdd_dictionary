@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="10330" language="none" diagramType="blk">
+<Signal id="SIG1" name="isInfo">
+</Signal>
+<Signal id="SIG2" name="td">
+</Signal>
+<Signal id="SIG3" name="lt">
+</Signal>
+<Signal id="SIG4" name="requestInfo">
+</Signal>
+<Signal id="SIG5" name="errorFound">
+</Signal>
+<Item id="ITEM1" type="block" name="Servidor" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB1"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW4" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK2" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK3" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG3"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="(cSer_Nube)" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
+<Channel name="cAdministrativo" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW4"/>
+</Item>
+<Item id="ITEM2" type="process" name="ProcesoAcciones" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK3" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG3"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK2" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG5"/>
+</SentSignals>
+</SignalWindow>
+</Item>
+</DictionaryObjects>

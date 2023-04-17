@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="_SYMBOL_0:left _LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _SYMBOL_0:right _LIFELINE_4 _LIFELINE_5 _LIFELINE_6"/>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="PROCESS_START" color="-" text="Cámara
+" text_size="50 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="PROCESS_START" color="-" text="Micrófono
+" text_size="71 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="PROCESS_START" color="-" text="Sensor de
+Movimiento
+" text_size="78 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="PROCESS_START" color="-" text="Controlador
+" text_size="85 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_4" event_type="PROCESS_START" color="-" text="Administrador
+" text_size="99 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="PROCESS_START" color="-" text="Base de Datos
+" text_size="99 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="PROCESS_START" color="-" text="Servidor
+" text_size="64 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Problem
+" identifier="_LINK_464"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="warning(signal, device)
+" identifier="_LINK_468"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_SEP" color="-" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Problem&quot;
+" identifier="_LINK_473"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_1" event_type="OPERATION_CALL" color="#000000" text="warning(signal, device)
+" identifier="_LINK_477"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_SEP" color="-" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Problem&quot;
+" identifier="_LINK_480"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="warning(signal, device)
+" identifier="_LINK_484"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_END" color="-" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="warning(signal, device)
+" identifier="_LINK_499"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_6" event_type="OPERATION_CALL" color="#000000" text="warning(signal, device)
+" identifier="_LINK_503"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE" scaleFactor="1.0"/>
+</MscDiagram>

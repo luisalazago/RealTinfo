@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<Diagram language="sdl" type="sys" defaultColorsNeedFixing="FALSE" name="SDL_Diagram" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
+
+<DiagramPartition name="Architecture" nbPagesH="3" nbPagesV="1">
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.5" bottomMargin="1.5" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+
+<Symbol symbolId="SYMB1" type="sdlSysDgmFrm" xCenter="807" yCenter="364" fixedDimensions="TRUE" width="1571" height="662" color="-" fillColor="-">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB14" type="sdlBlk" xCenter="330" yCenter="352" fixedDimensions="FALSE" width="110" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Controlador</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB15" type="sdlBlk" xCenter="858" yCenter="352" fixedDimensions="FALSE" width="88" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Servidor</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB16" type="sdlBlk" xCenter="484" yCenter="121" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Administrador</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB17" type="sdlBlk" xCenter="1232" yCenter="352" fixedDimensions="FALSE" width="66" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Nube</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB23" type="sdlPrcs" xCenter="154" yCenter="88" fixedDimensions="TRUE" width="176" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Proceso_DispoContro</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB24" type="sdlPrcs" xCenter="594" yCenter="605" fixedDimensions="TRUE" width="154" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Proceso_ControSer</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB25" type="sdlPrcs" xCenter="858" yCenter="132" fixedDimensions="TRUE" width="154" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Proceso_SerAdmi</Text>
+</Symbol>
+</Symbol>
+
+<Link linkId="LINK157" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cAdministrativo)</Text>
+<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.5" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB25" type="chnl" isOutside="TRUE" side="x" position="0.142857142857" endType="midarrow">
+<Text id="1">[warning, errorFound]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="-110"/>
+<LinkSegment orientation="h" length="-11"/>
+<LinkSegment orientation="v" length="-110"/>
+
+</Link>
+
+<Link linkId="LINK32" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cMundoSoporte)</Text>
+<Connector attachedSymbolId="SYMB16" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="n" position="-0.383195416932" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="-121"/>
+
+</Link>
+
+<Link linkId="LINK156" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cMundo)</Text>
+<Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0909090909091" endType="midarrow">
+<Text id="1">[requestInfo]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="e" position="0.0634441087613" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="110"/>
+<LinkSegment orientation="v" length="-2"/>
+<LinkSegment orientation="h" length="231"/>
+
+</Link>
+
+<Link linkId="LINK155" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cSer_Nube)</Text>
+<Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[sendInfo, isInfo,
+td, lt]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[requestInfo,
+errorFound]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="-374"/>
+
+</Link>
+
+<Link linkId="LINK149" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cDispositivos)</Text>
+<Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[move, warning,
+busy, sendInfo]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="w" position="0.229607250755" endType="midarrow">
+<Text id="1">[turnCamera, turnMic, busy]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="319"/>
+<LinkSegment orientation="h" length="-154"/>
+
+</Link>
+
+<Link linkId="LINK153" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cDispoContro)</Text>
+<Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="x" position="-0.6" endType="midarrow">
+<Text id="1">[warning,
+sendInfo]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="242"/>
+<LinkSegment orientation="v" length="198"/>
+<LinkSegment orientation="h" length="-99"/>
+<LinkSegment orientation="v" length="66"/>
+
+</Link>
+
+<Link linkId="LINK154" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cControlador)</Text>
+<Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="x" position="-0.766233766234" endType="midarrow">
+<Text id="1">[sendInfo, warning]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="-253"/>
+<LinkSegment orientation="h" length="-205"/>
+
+</Link>
+
+<Link linkId="LINK152" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cControSer)</Text>
+<Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[warning, sendInfo]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="264"/>
+<LinkSegment orientation="v" length="-253"/>
+
+</Link>
+
+<Link linkId="LINK158" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>(cSerAdmin)</Text>
+<Connector attachedSymbolId="SYMB25" type="chnl" isOutside="TRUE" side="y" position="0.5" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB16" type="chnl" isOutside="TRUE" side="y" position="1.0" endType="midarrow">
+<Text id="1">[warning,
+errorFound]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="-374"/>
+
+</Link>
+</DiagramPartition>
+
+<DiagramPartition name="Declarations" nbPagesH="2" nbPagesV="1">
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.5" bottomMargin="1.5" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+
+<Symbol symbolId="SYMB27" type="sdlSysDgmFrm" xCenter="538" yCenter="364" fixedDimensions="TRUE" width="1033" height="662" color="-" fillColor="-">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB28" type="sdlText" xCenter="286" yCenter="110" fixedDimensions="TRUE" width="352" height="110" color="#000000" fillColor="#FFFFFF">
+<Description></Description>
+<Text>/* Signals of the system */
+SIGNAL move(boolean), warning(device, senal);
+SIGNAL sendInfo(info);
+SIGNAL requestInfo(request), isInfo(request);
+SIGNAL busy;
+</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="286" yCenter="352" fixedDimensions="FALSE" width="330" height="264" color="#000000" fillColor="#FFFFFF">
+<Description></Description>
+<Text>/* Definition of the types */
+NEWTYPE info
+  LITERALS video, audio;
+ENDNEWTYPE
+
+NEWTYPE device
+  LITERALS camera, microphone, sensor;
+ENDNEWTYPE
+
+NEWTYPE senal
+  LITERALS batery, externo, almacenamiento;
+ENDNEWTYPE
+
+NEWTYPE request
+  LITERALS get, read; 
+ENDNEWTYPE
+</Text>
+</Symbol>
+</Symbol>
+</DiagramPartition>
+
+</Diagram>

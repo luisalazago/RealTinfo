@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="11340" language="none" diagramType="sys">
+<Signal id="SIG1" name="warning">
+<SignalParameterType>device</SignalParameterType>
+<SignalParameterType>senal</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM5"/>
+<SignalParameterTypeId typeItemId="ITEM2"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB26" positions="0,16"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG10" name="busy">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB26" positions="3,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG11" name="move">
+<SignalParameterType>m</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM4"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB26" positions="0,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG2" name="sendInfo">
+<SignalParameterType>info</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM6"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB26" positions="1,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG3" name="requestInfo">
+<SignalParameterType>request</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM3"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB26" positions="2,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG4" name="errorFound">
+</Signal>
+<Signal id="SIG5" name="isInfo">
+<SignalParameterType>request</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM3"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB26" positions="2,29"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG6" name="td">
+</Signal>
+<Signal id="SIG7" name="lt">
+</Signal>
+<Signal id="SIG8" name="turnCamera">
+</Signal>
+<Signal id="SIG9" name="turnMic">
+</Signal>
+<Item id="ITEM1" type="system" name="SDL_Diagram" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB1"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW16" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK32" isFrom="FALSE"/>
+<Connections>
+<Connection name="(cMundoSoporte)"/>
+</Connections>
+</SignalWindow>
+<SignalWindow id="SIGWDW17" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK156" isFrom="FALSE"/>
+<Connections>
+<Connection name="(cMundo)"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG3"/>
+</SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW18" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK149" isFrom="FALSE"/>
+<Connections>
+<Connection name="(cDispositivos)"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG11"/>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG2"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG9"/>
+<SignalReference id="SIG10"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="(cDispoContro)" fromSignalWindow="SIGWDW8" toSignalWindow="SIGWDW1"/>
+<Channel name="(cControlador)" fromSignalWindow="SIGWDW9" toSignalWindow="SIGWDW2"/>
+<Channel name="(cMundo)" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW17"/>
+<Channel name="(cSer_Nube)" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW14"/>
+<Channel name="(cAdministrativo)" fromSignalWindow="SIGWDW13" toSignalWindow="SIGWDW5"/>
+<Channel name="(cSerAdmin)" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW12"/>
+<Channel name="(cDispositivos)" fromSignalWindow="SIGWDW7" toSignalWindow="SIGWDW18"/>
+<Channel name="(cControSer)" fromSignalWindow="SIGWDW10" toSignalWindow="SIGWDW15"/>
+<Channel name="(cMundoSoporte)" fromSignalWindow="SIGWDW11" toSignalWindow="SIGWDW16"/>
+</Item>
+<Item id="ITEM10" type="process" name="Proceso_DispoContro" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB23"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB23"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW7" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK149" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG9"/>
+<SignalReference id="SIG10"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG11"/>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW8" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK153" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</SentSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM11" type="process" name="Proceso_ControSer" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB24"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB24"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW9" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK154" isFrom="TRUE"/>
+<ReceivedSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW10" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK152" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</SentSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM12" type="block" name="Administrador" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB16"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB16"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW12" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK158" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW11" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK32" isFrom="TRUE"/>
+</SignalWindow>
+</Item>
+<Item id="ITEM13" type="block" name="Servidor" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB15"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB15"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW14" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK155" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG7"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW15" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK152" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW13" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK157" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG4"/>
+</SentSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM2" type="type" name="senal" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB26"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="type" name="request" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB26"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="type" name="m" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB26"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM5" type="type" name="device" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB26"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM6" type="type" name="info" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB26"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="block" name="Controlador" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB14"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB14"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK153" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK154" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG1"/>
+</SentSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM8" type="block" name="Nube" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB17"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB17"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW4" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK155" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG7"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK156" isFrom="TRUE"/>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM9" type="process" name="Proceso_SerAdmi" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB25"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB25"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW5" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK157" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW6" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK158" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG4"/>
+</SentSignals>
+</SignalWindow>
+</Item>
+</DictionaryObjects>

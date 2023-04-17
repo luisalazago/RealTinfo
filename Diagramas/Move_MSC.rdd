@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="_LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3"/>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="PROCESS_START" color="-" text="Cámara
+" text_size="50 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="PROCESS_START" color="-" text="Micrófono
+" text_size="71 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="PROCESS_START" color="-" text="Sensor de
+Movimiento
+" text_size="78 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="PROCESS_START" color="-" text="Controlador
+" text_size="85 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;move&quot;
+" identifier="_LINK_334"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="moveSate(1)
+" identifier="_LINK_337"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnMic(1)
+" identifier="_LINK_343"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1)
+" identifier="_LINK_347"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_350"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_350"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic is Recording&quot;
+" identifier="_LINK_355"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic is Recording&quot;
+" identifier="_LINK_355"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE" scaleFactor="1.0"/>
+</MscDiagram>

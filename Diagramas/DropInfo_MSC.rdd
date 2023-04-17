@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="_SYMBOL_0:left _SYMBOL_1:left _LIFELINE_3 _LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _SYMBOL_1:right _SYMBOL_0:right"/>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="PROCESS_START" color="-" text="Administrador
+" text_size="138 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="PROCESS_START" color="-" text="Servidor
+" text_size="64 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="PROCESS_START" color="-" text="Bade de Datos
+" text_size="99 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="PROCESS_START" color="-" text="Usuario Destino
+" text_size="113 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Time to Drop&quot;
+" identifier="_LINK_517"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;The Data will erase from the Data Base, please save it&quot;
+" identifier="_LINK_538"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;The Data will erase from the Data Base, please save it&quot;
+" identifier="_LINK_538"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_0 _LIFELINE_2 _LIFELINE_1" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="requestInfo(request)
+" identifier="_LINK_550"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="isInfo(request)
+" identifier="_LINK_554"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_0 _LIFELINE_2 _LIFELINE_1" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="True
+" identifier="_LINK_634"/>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="True
+" identifier="_LINK_634"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="info
+" identifier="_LINK_638"/>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="info
+" identifier="_LINK_638"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="ansRequest(info)
+" identifier="_LINK_563"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_SEP" color="-" identifier="_SYMBOL_1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="False
+" identifier="_LINK_642"/>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="False
+" identifier="_LINK_642"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="error
+" identifier="_LINK_646"/>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="error
+" identifier="_LINK_646"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="errorFound(error)
+" identifier="_LINK_595"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="ansRequest(error)
+" identifier="_LINK_601"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_END" color="-" identifier="_SYMBOL_1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_END" color="-" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Last time to drop&quot;
+" identifier="_LINK_542"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="dropData()
+" identifier="_LINK_521"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE" scaleFactor="1.0"/>
+</MscDiagram>

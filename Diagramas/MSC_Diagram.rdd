@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="_SYMBOL_3:left _LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _SYMBOL_3:right _SYMBOL_0:left _SYMBOL_2:left _LIFELINE_8 _LIFELINE_4 _LIFELINE_5 _SYMBOL_0:right _LIFELINE_6 _SYMBOL_2:right"/>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="PROCESS_START" color="-" text="Cámara
+" text_size="68 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="PROCESS_START" color="-" text="Micrófono
+" text_size="98 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="PROCESS_START" color="-" text="Sensor de
+Movimiento
+" text_size="108 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="PROCESS_START" color="-" text="Controlador
+" text_size="118 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_8" event_type="PROCESS_START" color="-" text="Administrador
+" text_size="99 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_4" event_type="PROCESS_START" color="-" text="Base de Datos
+" text_size="138 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_5" event_type="PROCESS_START" color="-" text="Servidor
+" text_size="88 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="PROCESS_START" color="-" text="Dispositivo de
+Cómputo
+" text_size="106 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;move&quot;
+" identifier="_LINK_32"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="movementState(1)
+" identifier="_LINK_38"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="turnMic(1)
+" identifier="_LINK_105"/>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnMic(1)
+" identifier="_LINK_46"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_1" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1)
+" identifier="_LINK_112"/>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1)
+" identifier="_LINK_108"/>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1)
+" identifier="_LINK_51"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_54"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_54"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_114"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_117"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_114"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera is Recording&quot;
+" identifier="_LINK_117"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic is recording&quot;
+" identifier="_LINK_60"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic is recording&quot;
+" identifier="_LINK_120"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic is recording&quot;
+" identifier="_LINK_60"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic is recording&quot;
+" identifier="_LINK_120"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;no move&quot;
+" identifier="_LINK_67"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="movementState(0)
+" identifier="_LINK_71"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="turnMic(0)
+" identifier="_LINK_123"/>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnMic(0)
+" identifier="_LINK_78"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_1" event_type="OPERATION_CALL" color="#000000" text="turnCamera(0)
+" identifier="_LINK_128"/>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="turnCamera(0)
+" identifier="_LINK_126"/>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnCamera(0)
+" identifier="_LINK_84"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="sendVideo
+" identifier="_LINK_88"/>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_1" event_type="OPERATION_CALL" color="#000000" text="sendVideo
+" identifier="_LINK_131"/>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="sendVideo
+" identifier="_LINK_134"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_1" event_type="OPERATION_CALL" color="#000000" text="sendAudio
+" identifier="_LINK_92"/>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="sendAudio
+" identifier="_LINK_137"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera off&quot;
+" identifier="_LINK_172"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera off&quot;
+" identifier="_LINK_169"/>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera off&quot;
+" identifier="_LINK_172"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera off&quot;
+" identifier="_LINK_169"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera off&quot;
+" identifier="_LINK_167"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera off&quot;
+" identifier="_LINK_167"/>
+<MscEvent lifeline_ids="_LIFELINE_8 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="sendInfo(video, audio)
+" identifier="_LINK_100"/>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_8" event_type="OPERATION_CALL" color="#000000" text="sendInfo(video, audio)
+" identifier="_LINK_183"/>
+<MscEvent lifeline_ids="_LIFELINE_5 _LIFELINE_4" event_type="OPERATION_CALL" color="#000000" text="sendInfo(video, audio)
+" identifier="_LINK_142"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic off&quot;
+" identifier="_LINK_177"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic off&quot;
+" identifier="_LINK_180"/>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic off&quot;
+" identifier="_LINK_177"/>
+<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic off&quot;
+" identifier="_LINK_180"/>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_CALL" color="#000000" text="isEnoughSpace(size)
+" identifier="_LINK_146"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_8 _LIFELINE_4 _LIFELINE_5" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_RETURN" color="#000000" text="True
+" identifier="_LINK_150"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_CALL" color="#000000" text="saveInfo(video, audio)
+" identifier="_LINK_159"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_SEP" color="-" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_RETURN" color="#000000" text="False
+" identifier="_LINK_154"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4" event_type="MESSAGE_SEND" color="#000000" text="&quot;Not Enough Space in the DB&quot;
+" identifier="_LINK_189"/>
+<MscEvent lifeline_ids="_LIFELINE_8" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Not Enough Space in the DB&quot;
+" identifier="_LINK_189"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_END" color="-" identifier="_SYMBOL_0"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;User Request&quot;
+" identifier="_LINK_192"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_5 _LIFELINE_6" event_type="OPERATION_CALL" color="#000000" text="requesInfo(request)
+" identifier="_LINK_196"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_CALL" color="#000000" text="isInfo(request)
+" identifier="_LINK_202"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_8 _LIFELINE_4 _LIFELINE_5 _LIFELINE_6" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_RETURN" color="#000000" text="True
+" identifier="_LINK_206"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_RETURN" color="#000000" text="info
+" identifier="_LINK_210"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6 _LIFELINE_5" event_type="OPERATION_CALL" color="#000000" text="ansRequest(info)
+" identifier="_LINK_236"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_SEP" color="-" identifier="_SYMBOL_2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_RETURN" color="#000000" text="False
+" identifier="_LINK_223"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_RETURN" color="#000000" text="error
+" identifier="_LINK_227"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_4" event_type="MESSAGE_SEND" color="#000000" text="&quot;Error found in DB&quot;
+" identifier="_LINK_264"/>
+<MscEvent lifeline_ids="_LIFELINE_8" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Error found in DB&quot;
+" identifier="_LINK_264"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_8 _LIFELINE_4" event_type="OPERATION_CALL" color="#000000" text="errorFound(error)
+" identifier="_LINK_275"/>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_CALL" color="#000000" text="errorFound(error)
+" identifier="_LINK_272"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_6 _LIFELINE_5" event_type="OPERATION_CALL" color="#000000" text="ansRequest(error)
+" identifier="_LINK_232"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_END" color="-" identifier="_SYMBOL_2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Problem&quot;
+" identifier="_LINK_278"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_0" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_285"/>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_1" event_type="OPERATION_CALL" color="#000000" text="warning(signal,devide)
+" identifier="_LINK_288"/>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_290"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_SEP" color="-" identifier="_SYMBOL_3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Problem&quot;
+" identifier="_LINK_293"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_1" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_297"/>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_301"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_SEP" color="-" identifier="_SYMBOL_3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Problem&quot;
+" identifier="_LINK_304"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_308"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="INLINE_EXPRESSION_END" color="-" identifier="_SYMBOL_3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_8 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_311"/>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_8" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_317"/>
+<MscEvent lifeline_ids="_LIFELINE_5 _LIFELINE_4" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_320"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_8 _LIFELINE_4" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_330"/>
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_5" event_type="OPERATION_CALL" color="#000000" text="warning(signal,device)
+" identifier="_LINK_324"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE" scaleFactor="1.0"/>
+</MscDiagram>

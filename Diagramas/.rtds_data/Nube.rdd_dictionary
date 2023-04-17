@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="10330" language="none" diagramType="blk">
+<Signal id="SIG1" name="requestInfo">
+<SignalParameterType>request</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM3"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB4" positions="1,24"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG10" name="lt">
+</Signal>
+<Signal id="SIG2" name="info1">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB4" positions="2,15"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG3" name="answer">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB4" positions="2,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG4" name="ansRequest">
+<SignalParameterType>ans</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM2"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB4" positions="1,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG5" name="errorFound">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB4" positions="3,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG6" name="dropData">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB4" positions="3,19"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG7" name="sendInfo">
+</Signal>
+<Signal id="SIG8" name="isInfo">
+</Signal>
+<Signal id="SIG9" name="td">
+</Signal>
+<Item id="ITEM1" type="block" name="Nube" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB1"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW4" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK13" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG9"/>
+<SignalReference id="SIG10"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW5" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK14" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG9"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="(cSerNube)" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW1"/>
+<Channel name="cServUser" fromSignalWindow="SIGWDW5" toSignalWindow="SIGWDW2"/>
+</Item>
+<Item id="ITEM2" type="type" name="ans" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="type" name="request" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="process" name="Proceso_BD" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK13" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG5"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG9"/>
+<SignalReference id="SIG10"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK14" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG9"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK12" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG6"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+</DictionaryObjects>
