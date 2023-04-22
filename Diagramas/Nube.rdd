@@ -18,25 +18,15 @@
 
 <Symbol symbolId="SYMB3" type="sdlBlk" xCenter="836" yCenter="132" fixedDimensions="TRUE" width="132" height="66" color="#000000" fillColor="#C4EFED">
 <Description></Description>
-<Text>Base de Datos
+<Text>Base_de_Datos
 </Text>
 </Symbol>
 
-<Symbol symbolId="SYMB4" type="sdlText" xCenter="253" yCenter="132" fixedDimensions="FALSE" width="352" height="88" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB4" type="sdlText" xCenter="187" yCenter="132" fixedDimensions="FALSE" width="220" height="88" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Signals of the system*/
-SIGNAL ansRequest(ans), requestInfo(request);
 SIGNAL answer, info1;
-SIGNAL errorFound, dropData;
-</Text>
-</Symbol>
-
-<Symbol symbolId="SYMB5" type="sdlText" xCenter="198" yCenter="242" fixedDimensions="FALSE" width="242" height="88" color="#000000" fillColor="#FFFFFF">
-<Description></Description>
-<Text>/*Type definition*/
-NEWTYPE ans
-  LITERALS errores, respuesta;
-ENDNEWTYPE
+SIGNAL dropData;
 </Text>
 </Symbol>
 </Symbol>

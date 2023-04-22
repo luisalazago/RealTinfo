@@ -3,40 +3,54 @@
 <!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
 
 <DictionaryObjects version="10330" language="none" diagramType="blk">
-<Signal id="SIG1" name="isInfo">
+<Signal id="SIG1" name="warning">
 </Signal>
-<Signal id="SIG2" name="td">
+<Signal id="SIG2" name="sendInfo">
 </Signal>
-<Signal id="SIG3" name="lt">
+<Signal id="SIG3" name="errorFound">
 </Signal>
-<Signal id="SIG4" name="requestInfo">
+<Signal id="SIG4" name="isInfo">
 </Signal>
-<Signal id="SIG5" name="errorFound">
+<Signal id="SIG5" name="td">
+</Signal>
+<Signal id="SIG6" name="lt">
+</Signal>
+<Signal id="SIG7" name="requestInfo">
 </Signal>
 <Item id="ITEM1" type="block" name="Servidor" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK2" isFrom="FALSE"/>
-<ReceivedSignals>
-<SignalReference id="SIG5"/>
-</ReceivedSignals>
-</SignalWindow>
-<SignalWindow id="SIGWDW3" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK3" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK6" isFrom="TRUE"/>
 <SentSignals>
-<SignalReference id="SIG4"/>
-<SignalReference id="SIG5"/>
-</SentSignals>
-<ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
+</SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW5" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK5" isFrom="TRUE"/>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
 <SignalReference id="SIG3"/>
 </ReceivedSignals>
 </SignalWindow>
-<Channel name="(cSer_Nube)" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
-<Channel name="cAdministrativo" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW4"/>
+<SignalWindow id="SIGWDW6" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK4" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG7"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="cControSer" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW1"/>
+<Channel name="cAdministrativo" fromSignalWindow="SIGWDW5" toSignalWindow="SIGWDW2"/>
+<Channel name="cSerNube" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW3"/>
 </Item>
 <Item id="ITEM2" type="process" name="ProcesoAcciones" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
@@ -46,22 +60,31 @@
 <SymbolReference symbolId="SYMB2"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW1" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK3" isFrom="FALSE"/>
-<SentSignals>
+<ConnectorReference linkId="LINK6" isFrom="FALSE"/>
+<ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
-<SignalReference id="SIG3"/>
-</SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG4"/>
-<SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW2" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK2" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK5" isFrom="FALSE"/>
 <SentSignals>
-<SignalReference id="SIG5"/>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG3"/>
 </SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK4" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG7"/>
+</ReceivedSignals>
 </SignalWindow>
 </Item>
 </DictionaryObjects>
