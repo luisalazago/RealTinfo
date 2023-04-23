@@ -3,9 +3,53 @@
 <!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
 
 <DictionaryObjects version="10330" language="none" diagramType="blk">
+<Signal id="SIG1" name="time">
+</Signal>
+<Signal id="SIG2" name="answer">
+</Signal>
+<Signal id="SIG3" name="errorFound">
+</Signal>
+<Signal id="SIG4" name="info1">
+</Signal>
 <Item id="ITEM1" type="block" name="Base_de_Datos" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
+<SignalWindow id="SIGWDW2" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK1" isFrom="TRUE"/>
+<Connections>
+<Connection name="cProcBD"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG1"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="cProcBD" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW1"/>
+</Item>
+<Item id="ITEM2" type="process" name="Proceso_GestionBD" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK1" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</SignalWindow>
 </Item>
 </DictionaryObjects>

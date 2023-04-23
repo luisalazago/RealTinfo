@@ -48,8 +48,8 @@
 </Symbol>
 
 <Link linkId="LINK157" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>(cAdministrativo)</Text>
-<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.5" endType="midarrow">
+<Text>cAdministrativo</Text>
+<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.25" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
 </Connector>
@@ -58,9 +58,7 @@
 </Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="-110"/>
-<LinkSegment orientation="h" length="-11"/>
-<LinkSegment orientation="v" length="-110"/>
+<LinkSegment orientation="v" length="-220"/>
 
 </Link>
 
@@ -96,17 +94,16 @@
 </Link>
 
 <Link linkId="LINK155" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>(cSerNube)
-</Text>
+<Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[sendInfo, isInfo,
-td, lt]
+td, lt, time]
 </Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[requestInfo,
-errorFound]
+errorFound, time]
 </Text>
 <Text id="2"></Text>
 </Connector>
@@ -132,7 +129,7 @@ busy, sendInfo]
 
 </Link>
 
-<Link linkId="LINK153" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK159" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>(cDispoContro)</Text>
 <Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]
@@ -152,7 +149,7 @@ sendInfo]
 
 </Link>
 
-<Link linkId="LINK154" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK160" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>(cControlador)</Text>
 <Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="x" position="-0.766233766234" endType="midarrow">
 <Text id="1">[sendInfo, warning]
@@ -169,7 +166,7 @@ sendInfo]
 </Link>
 
 <Link linkId="LINK152" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>(cControSer)</Text>
+<Text>cControSer</Text>
 <Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
@@ -214,14 +211,13 @@ errorFound]
 SIGNAL move(boolean), warning(device, senal);
 SIGNAL sendInfo(info);
 SIGNAL requestInfo(request), isInfo(request);
-SIGNAL busy;
+SIGNAL busy, time(t);
 SIGNAL ansRequest(ans);
 SIGNAL errorFound;
-SIGNAL turnCamera(boolean), turnMic(boolean);
-</Text>
+SIGNAL turnCamera(boolean), turnMic(boolean);</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB29" type="sdlText" xCenter="308" yCenter="396" fixedDimensions="FALSE" width="352" height="330" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="286" yCenter="429" fixedDimensions="FALSE" width="352" height="374" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Definition of the types */
 NEWTYPE info
@@ -243,7 +239,10 @@ ENDNEWTYPE;
 NEWTYPE ans
   LITERALS errores, respuesta;
 ENDNEWTYPE;
-</Text>
+
+SYNTYPE t = INTEGER
+  CONSTANTS 1:10
+ENDSYNTYPE;</Text>
 </Symbol>
 </Symbol>
 </DiagramPartition>

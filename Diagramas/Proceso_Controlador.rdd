@@ -7,19 +7,19 @@
 <SdlFSMSymbol identifier="SYM6" type="sdlText" text="DCL
   informacion info;
   dispositivo device;
-  segnal senal;" outline_color="-" background_color="-" center_coordinates="1201 164" dimensions="168 78" attached_symbol_id=""/>
+  segnal senal;" outline_color="-" background_color="-" center_coordinates="967 153" dimensions="168 78" attached_symbol_id=""/>
 <StateTransitionBlock top_left_coordinates="189 73">
-<SdlFSMSymbol identifier="SYM1" type="sdlState" text="Conexión" outline_color="-" background_color="-" center_coordinates="336 93" dimensions="78 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM1" type="sdlState" text="Conexión" outline_color="-" background_color="-" center_coordinates="335 93" dimensions="76 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM2" type="sdlInputSig" text="sendInfo(informacion)" outline_color="-" background_color="-" center_coordinates="336 145" dimensions="168 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM2" type="sdlInputSig" text="sendInfo(informacion)" outline_color="-" background_color="-" center_coordinates="335 145" dimensions="166 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM3" type="sdlSendSig" text="sendInfo(informacion) VIA cControlador1" outline_color="-" background_color="-" center_coordinates="336 197" dimensions="294 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM3" type="sdlSendSig" text="sendInfo(informacion) VIA cControlador1" outline_color="-" background_color="-" center_coordinates="335 197" dimensions="292 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM4" type="sdlInputSig" text="warning(dispositivo, segnal)" outline_color="-" background_color="-" center_coordinates="669 145" dimensions="218 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM4" type="sdlInputSig" text="warning(dispositivo, segnal)" outline_color="-" background_color="-" center_coordinates="655 145" dimensions="216 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM5" type="sdlSendSig" text="warning(dispositivo,senal) VIA cControlador1" outline_color="-" background_color="-" center_coordinates="669 197" dimensions="330 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM5" type="sdlSendSig" text="warning(dispositivo,senal) VIA cControlador1" outline_color="-" background_color="-" center_coordinates="655 197" dimensions="328 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>

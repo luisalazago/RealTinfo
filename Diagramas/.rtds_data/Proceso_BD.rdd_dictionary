@@ -9,7 +9,13 @@
 <SymbolReference symbolId="SYM2" usingKind="input"/>
 </UsingSymbols>
 </Signal>
-<Signal id="SIG10" name="isInfo">
+<Signal id="SIG10" name="errorFound">
+<UsingSymbols>
+<SymbolReference symbolId="SYM25" usingKind="output"/>
+<SymbolReference symbolId="SYM20" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG11" name="isInfo">
 <UsingSymbols>
 <SymbolReference symbolId="SYM45" usingKind="output"/>
 <SymbolReference symbolId="SYM44" usingKind="input"/>
@@ -37,52 +43,92 @@
 <SymbolReference symbolId="SYM40" usingKind="output"/>
 </UsingSymbols>
 </Signal>
-<Signal id="SIG6" name="answer">
+<Signal id="SIG6" name="time">
+<UsingSymbols>
+<SymbolReference symbolId="SYM49" usingKind="output"/>
+<SymbolReference symbolId="SYM48" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG7" name="answer">
 <UsingSymbols>
 <SymbolReference symbolId="SYM9" usingKind="input"/>
 </UsingSymbols>
 </Signal>
-<Signal id="SIG7" name="info">
+<Signal id="SIG8" name="info">
 <UsingSymbols>
 <SymbolReference symbolId="SYM16" usingKind="input"/>
 </UsingSymbols>
 </Signal>
-<Signal id="SIG8" name="ansRequest">
+<Signal id="SIG9" name="ansRequest">
 <UsingSymbols>
 <SymbolReference symbolId="SYM17" usingKind="output"/>
 <SymbolReference symbolId="SYM21" usingKind="output"/>
-</UsingSymbols>
-</Signal>
-<Signal id="SIG9" name="errorFound">
-<UsingSymbols>
-<SymbolReference symbolId="SYM25" usingKind="output"/>
-<SymbolReference symbolId="SYM20" usingKind="input"/>
 </UsingSymbols>
 </Signal>
 <Item id="ITEM1" type="process" name="Proceso_BD" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <Body>
 <SentSignals>
 <SignalReference id="SIG2"/>
-<SignalReference id="SIG10"/>
-<SignalReference id="SIG3"/>
 <SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG3"/>
 <SignalReference id="SIG1"/>
-<SignalReference id="SIG8"/>
 <SignalReference id="SIG9"/>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG11"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG2"/>
-<SignalReference id="SIG7"/>
-<SignalReference id="SIG10"/>
-<SignalReference id="SIG3"/>
-<SignalReference id="SIG6"/>
-<SignalReference id="SIG1"/>
-<SignalReference id="SIG9"/>
 <SignalReference id="SIG4"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG11"/>
 </ReceivedSignals>
 </Body>
 </Item>
-<Item id="ITEM10" type="state" name="Respuesta" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM10" type="type" name="info" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM47"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM11" type="variable" name="respuesta" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM22"/>
+<SymbolReference symbolId="SYM17"/>
+<SymbolReference symbolId="SYM21"/>
+<SymbolReference symbolId="SYM23"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM12" type="variable" name="info" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM22"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM13" type="variable" name="peticion" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM47" positions="2,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM14" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM10" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM47" positions="1,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM15" type="variable" name="respuesta" parentId="ITEM1" scope="none" variableTypeName="ans" variableTypeId="ITEM9" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM47" positions="3,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM16" type="state" name="Comunicaciones" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM17" type="state" name="Respuesta" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM8"/>
 </DefiningSymbols>
@@ -94,8 +140,6 @@
 <UsingSymbols>
 <SymbolReference symbolId="SYM3"/>
 <SymbolReference symbolId="SYM2"/>
-<SymbolReference symbolId="SYM44"/>
-<SymbolReference symbolId="SYM45"/>
 </UsingSymbols>
 </Item>
 <Item id="ITEM3" type="variable" name="errorFound" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -108,33 +152,33 @@
 <SymbolReference symbolId="SYM11"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM5" type="variable" name="peticion" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM5" type="type" name="request" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM47"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM6" type="variable" name="tt" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM48"/>
+<SymbolReference symbolId="SYM49"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="variable" name="peticion" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM31"/>
 <SymbolReference symbolId="SYM30"/>
+<SymbolReference symbolId="SYM44"/>
+<SymbolReference symbolId="SYM45"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM6" type="variable" name="false" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM8" type="variable" name="false" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM12"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM7" type="variable" name="respuesta" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM9" type="type" name="ans" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
-<SymbolReference symbolId="SYM22"/>
-<SymbolReference symbolId="SYM17"/>
-<SymbolReference symbolId="SYM21"/>
-<SymbolReference symbolId="SYM23"/>
+<SymbolReference symbolId="SYM47"/>
 </UsingSymbols>
-</Item>
-<Item id="ITEM8" type="variable" name="info" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM22"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM9" type="state" name="Comunicaciones" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM1"/>
-</DefiningSymbols>
 </Item>
 </DictionaryObjects>
