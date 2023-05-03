@@ -8,7 +8,7 @@
 DCL requerimiento request;
 
 TIMER tt := 0;
-TIMER nt;" outline_color="-" background_color="-" center_coordinates="334 276" dimensions="204 92" attached_symbol_id=""/>
+TIMER nt;" outline_color="-" background_color="-" center_coordinates="334 276" dimensions="202 90" attached_symbol_id=""/>
 <NonStateTransition top_left_coordinates="548 104">
 <SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="631 119" dimensions="60 30" attached_symbol_id=""/>
 <Transition>
@@ -20,7 +20,7 @@ TIMER nt;" outline_color="-" background_color="-" center_coordinates="334 276" d
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM3" type="sdlInputSig" text="sendInfo(informacion)" outline_color="-" background_color="-" center_coordinates="631 218" dimensions="166 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM26" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="631 270" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM29" type="sdlStop" outline_color="-" background_color="-" center_coordinates="631 260" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
@@ -42,16 +42,16 @@ requerimiento = read" outline_color="-" background_color="-" center_coordinates=
 </Transition>
 </DecisionBranch>
 </DecisionBlock>
-<SdlFSMSymbol identifier="SYM25" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="811 498" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM30" type="sdlStop" outline_color="-" background_color="-" center_coordinates="811 488" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM21" type="sdlInputSig" text="time(nt)" outline_color="-" background_color="-" center_coordinates="1044 218" dimensions="76 40" attached_symbol_id=""/>
 <Transition>
 <SdlFSMSymbol identifier="SYM24" type="sdlTask" text="tt := nt;" outline_color="-" background_color="-" center_coordinates="1044 270" dimensions="82 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM22" type="sdlTask" text="SET(NOW + 1, tt)" outline_color="-" background_color="-" center_coordinates="1044 322" dimensions="132 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM28" type="sdlInitTimer" text="SET(NOW + 1, tt)" outline_color="-" background_color="-" center_coordinates="1044 322" dimensions="144 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM23" type="sdlSendSig" text="time(tt) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="1044 374" dimensions="160 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM27" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="1044 426" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM31" type="sdlStop" outline_color="-" background_color="-" center_coordinates="1044 416" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>

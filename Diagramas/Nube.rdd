@@ -36,7 +36,8 @@ SIGNAL dropData;</Text>
 errorFound,
 time]
 </Text>
-<Text id="2">__</Text>
+<Text id="2">cSerNube
+</Text>
 </Connector>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[sendInfo, isInfo,
@@ -53,7 +54,8 @@ td, lt, time]
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="e" position="0.278709677419" endType="midarrow">
 <Text id="1">[ansRequest, td]
 </Text>
-<Text id="2">__</Text>
+<Text id="2">cMundo
+</Text>
 </Connector>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[requestInfo]
@@ -66,7 +68,8 @@ td, lt, time]
 </Link>
 
 <Link linkId="LINK15" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>(cProcBD)</Text>
+<Text>cProcBD
+</Text>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[answer, info1, errorFound, time]
 </Text>

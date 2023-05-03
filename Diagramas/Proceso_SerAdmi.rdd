@@ -6,21 +6,27 @@
 <SdlFSMPartition name="" needs_cleanup="FALSE">
 <SdlFSMSymbol identifier="SYM8" type="sdlText" text="DCL
   dispositivo device;
-  segnal senal;" outline_color="-" background_color="-" center_coordinates="793 168" dimensions="168 64" attached_symbol_id=""/>
-<StateTransitionBlock top_left_coordinates="125 66">
-<SdlFSMSymbol identifier="SYM1" type="sdlState" text="Problemon" outline_color="-" background_color="-" center_coordinates="282 86" dimensions="82 40" attached_symbol_id=""/>
-<NormalStateTransition>
-<SdlFSMSymbol identifier="SYM2" type="sdlInputSig" text="warning(dispositivo, segnal)" outline_color="-" background_color="-" center_coordinates="282 138" dimensions="216 40" attached_symbol_id=""/>
+  segnal senal;" outline_color="-" background_color="-" center_coordinates="793 168" dimensions="166 62" attached_symbol_id=""/>
+<NonStateTransition top_left_coordinates="53 54">
+<SdlFSMSymbol identifier="SYM9" type="sdlStart" outline_color="-" background_color="-" center_coordinates="210 69" dimensions="60 30" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM3" type="sdlSendSig" text="warning(dispositivo, segnal) VIA cSerAdmin" outline_color="-" background_color="-" center_coordinates="282 190" dimensions="314 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM4" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="282 242" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM10" type="sdlState" text="Problema" outline_color="-" background_color="-" center_coordinates="210 116" dimensions="76 40" attached_symbol_id=""/>
+</Transition>
+</NonStateTransition>
+<StateTransitionBlock top_left_coordinates="131 405">
+<SdlFSMSymbolReference identifier="SYM10"/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM11" type="sdlInputSig" text="warning(dispositivo, segnal)" outline_color="-" background_color="-" center_coordinates="210 168" dimensions="216 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM13" type="sdlSendSig" text="warning(dispositivo, segnal) VIA cSerAdmin" outline_color="-" background_color="-" center_coordinates="210 220" dimensions="314 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM15" type="sdlStop" outline_color="-" background_color="-" center_coordinates="210 262" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM5" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="543 138" dimensions="90 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM12" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="471 168" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM6" type="sdlSendSig" text="errorFound VIA cSerAdmin" outline_color="-" background_color="-" center_coordinates="543 190" dimensions="188 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM7" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="543 242" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM14" type="sdlSendSig" text="errorFound VIA cSerAdmin" outline_color="-" background_color="-" center_coordinates="471 220" dimensions="188 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM16" type="sdlStop" outline_color="-" background_color="-" center_coordinates="471 262" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>

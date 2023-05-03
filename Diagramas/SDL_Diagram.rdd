@@ -47,7 +47,7 @@
 </Symbol>
 </Symbol>
 
-<Link linkId="LINK157" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK187" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cAdministrativo</Text>
 <Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.25" endType="midarrow">
 <Text id="1">[]</Text>
@@ -62,7 +62,7 @@
 
 </Link>
 
-<Link linkId="LINK32" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK190" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>(cMundoSoporte)</Text>
 <Connector attachedSymbolId="SYMB16" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
@@ -72,19 +72,20 @@
 <Text id="1">[]</Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="-121"/>
+<LinkSegment orientation="v" length="-132"/>
 
 </Link>
 
 <Link linkId="LINK156" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>(cMundo)</Text>
+<Text>cMundo</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0909090909091" endType="midarrow">
 <Text id="1">[requestInfo]
 </Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="e" position="0.0634441087613" endType="midarrow">
-<Text id="1">[]</Text>
+<Text id="1">[ansRequest]
+</Text>
 <Text id="2"></Text>
 </Connector>
 <LinkSegment orientation="h" length="110"/>
@@ -93,7 +94,7 @@
 
 </Link>
 
-<Link linkId="LINK155" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK189" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[sendInfo, isInfo,
@@ -111,7 +112,7 @@ errorFound, time]
 
 </Link>
 
-<Link linkId="LINK149" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK174" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>(cDispositivos)</Text>
 <Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[move, warning,
@@ -129,7 +130,7 @@ busy, sendInfo]
 
 </Link>
 
-<Link linkId="LINK159" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK173" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>(cDispoContro)</Text>
 <Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]
@@ -165,7 +166,7 @@ sendInfo]
 
 </Link>
 
-<Link linkId="LINK152" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK188" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cControSer</Text>
 <Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
@@ -181,7 +182,7 @@ sendInfo]
 
 </Link>
 
-<Link linkId="LINK158" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK191" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>(cSerAdmin)</Text>
 <Connector attachedSymbolId="SYMB25" type="chnl" isOutside="TRUE" side="y" position="0.5" endType="midarrow">
 <Text id="1">[]</Text>
