@@ -98,13 +98,13 @@
 <Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[sendInfo, isInfo,
-td, lt, time]
+td, lt, tiempo]
 </Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[requestInfo,
-errorFound, time]
+errorFound, tiempo]
 </Text>
 <Text id="2"></Text>
 </Connector>
@@ -212,13 +212,14 @@ errorFound]
 SIGNAL move(boolean), warning(device, senal);
 SIGNAL sendInfo(info);
 SIGNAL requestInfo(request), isInfo(request);
-SIGNAL busy, time(t);
+SIGNAL busy, tiempo(t);
 SIGNAL ansRequest(ans);
 SIGNAL errorFound;
-SIGNAL turnCamera(boolean), turnMic(boolean);</Text>
+SIGNAL turnCamera(boolean), turnMic(boolean);
+</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB29" type="sdlText" xCenter="286" yCenter="429" fixedDimensions="FALSE" width="352" height="374" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="286" yCenter="429" fixedDimensions="FALSE" width="330" height="374" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Definition of the types */
 NEWTYPE info

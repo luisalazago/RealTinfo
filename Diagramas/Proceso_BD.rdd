@@ -9,24 +9,24 @@
   peticion request,
   respuesta ans;
 
-TIMER tt;" outline_color="-" background_color="-" center_coordinates="1141 113" dimensions="152 104" attached_symbol_id=""/>
+DCL tt t;" outline_color="-" background_color="-" center_coordinates="1142 114" dimensions="152 104" attached_symbol_id=""/>
 <StateTransitionBlock top_left_coordinates="345 457">
-<SdlFSMSymbol identifier="SYM8" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="401 477" dimensions="82 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM8" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="398 477" dimensions="82 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM9" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="401 529" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM9" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="398 529" dimensions="62 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM14" type="sdlState" text="Devolver Info" outline_color="-" background_color="-" center_coordinates="401 581" dimensions="112 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM14" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="398 581" dimensions="106 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM70" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="534 529" dimensions="64 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM70" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="524 529" dimensions="62 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM71" type="sdlState" text="Devolver Errores" outline_color="-" background_color="-" center_coordinates="534 581" dimensions="134 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM71" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="524 581" dimensions="126 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
 <StateTransitionBlock top_left_coordinates="18 463">
-<SdlFSMSymbol identifier="SYM15" type="sdlState" text="Devolver Info" outline_color="-" background_color="-" center_coordinates="150 483" dimensions="110 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM15" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="150 483" dimensions="106 40" attached_symbol_id=""/>
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM16" type="sdlInputSig" text="info" outline_color="-" background_color="-" center_coordinates="150 535" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
@@ -37,7 +37,7 @@ TIMER tt;" outline_color="-" background_color="-" center_coordinates="1141 113" 
 </NormalStateTransition>
 </StateTransitionBlock>
 <StateTransitionBlock top_left_coordinates="707 454">
-<SdlFSMSymbol identifier="SYM19" type="sdlState" text="Devolver Errores" outline_color="-" background_color="-" center_coordinates="839 474" dimensions="132 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM19" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="839 474" dimensions="126 40" attached_symbol_id=""/>
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM20" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="839 526" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
@@ -95,10 +95,10 @@ TIMER tt;" outline_color="-" background_color="-" center_coordinates="1141 113" 
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM65" type="sdlInputSig" text="time(tt)" outline_color="-" background_color="-" center_coordinates="935 178" dimensions="76 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM65" type="sdlInputSig" text="tiempo(tt)" outline_color="-" background_color="-" center_coordinates="942 178" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM66" type="sdlSendSig" text="time(tt) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="935 230" dimensions="160 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM67" type="sdlStop" outline_color="-" background_color="-" center_coordinates="935 272" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM66" type="sdlSendSig" text="tiempo(tt) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="942 230" dimensions="174 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM67" type="sdlStop" outline_color="-" background_color="-" center_coordinates="942 272" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>

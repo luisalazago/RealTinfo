@@ -3,7 +3,7 @@
 <!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
 
 <DictionaryObjects version="10330" language="none" diagramType="blk">
-<Signal id="SIG1" name="time">
+<Signal id="SIG1" name="tiempo">
 </Signal>
 <Signal id="SIG2" name="answer">
 </Signal>

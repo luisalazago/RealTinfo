@@ -20,14 +20,14 @@
 <Link linkId="LINK1" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cProcBD</Text>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="w" position="-0.00516129032258" endType="midarrow">
-<Text id="1">[time, answer, errorFound,
+<Text id="1">[tiempo, answer, errorFound,
 info1]
 </Text>
 <Text id="2">cProcBD
 </Text>
 </Connector>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[time]
+<Text id="1">[tiempo]
 </Text>
 <Text id="2"></Text>
 </Connector>

@@ -24,7 +24,7 @@
 </Signal>
 <Signal id="SIG4" name="errorFound">
 </Signal>
-<Signal id="SIG5" name="time">
+<Signal id="SIG5" name="tiempo">
 </Signal>
 <Signal id="SIG6" name="sendInfo">
 </Signal>
