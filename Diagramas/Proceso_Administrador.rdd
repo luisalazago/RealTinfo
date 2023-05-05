@@ -4,9 +4,8 @@
 
 <SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
 <SdlFSMPartition name="" needs_cleanup="FALSE">
-<SdlFSMSymbol identifier="SYM6" type="sdlText" text="DCL
-  dipositivo device;
-  segnal senal;" outline_color="-" background_color="-" center_coordinates="798 182" dimensions="162 64" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM6" type="sdlText" text="DCL dispositivo device;
+DCL segnal senal;" outline_color="-" background_color="-" center_coordinates="811 178" dimensions="182 50" attached_symbol_id=""/>
 <NonStateTransition top_left_coordinates="41 47">
 <SdlFSMSymbol identifier="SYM7" type="sdlStart" outline_color="-" background_color="-" center_coordinates="215 62" dimensions="60 30" attached_symbol_id=""/>
 <Transition>

@@ -8,9 +8,9 @@
 <SymbolReference symbolId="SYMB4" positions="1,7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG10" name="lt">
+<Signal id="SIG10" name="requestInfo">
 </Signal>
-<Signal id="SIG11" name="ansRequest">
+<Signal id="SIG11" name="lt">
 </Signal>
 <Signal id="SIG2" name="info1">
 <DefiningSymbols>
@@ -30,7 +30,7 @@
 </Signal>
 <Signal id="SIG7" name="isInfo">
 </Signal>
-<Signal id="SIG8" name="requestInfo">
+<Signal id="SIG8" name="ansRequest">
 </Signal>
 <Signal id="SIG9" name="td">
 </Signal>
@@ -39,6 +39,19 @@
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW5" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK14" isFrom="TRUE"/>
+<Connections>
+<Connection name="cMundo"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG10"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG8"/>
+<SignalReference id="SIG9"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW6" insideDiagram="TRUE">
 <ConnectorReference linkId="LINK13" isFrom="TRUE"/>
 <Connections>
 <Connection name="cSerNube"/>
@@ -47,31 +60,18 @@
 <SignalReference id="SIG6"/>
 <SignalReference id="SIG7"/>
 <SignalReference id="SIG9"/>
-<SignalReference id="SIG10"/>
+<SignalReference id="SIG11"/>
 <SignalReference id="SIG5"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG8"/>
+<SignalReference id="SIG10"/>
 <SignalReference id="SIG4"/>
 <SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
-<SignalWindow id="SIGWDW6" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK14" isFrom="TRUE"/>
-<Connections>
-<Connection name="cMundo"/>
-</Connections>
-<SentSignals>
-<SignalReference id="SIG8"/>
-</SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG11"/>
-<SignalReference id="SIG9"/>
-</ReceivedSignals>
-</SignalWindow>
 <Channel name="cProcBD" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW1"/>
-<Channel name="(cSerNube)" fromSignalWindow="SIGWDW5" toSignalWindow="SIGWDW2"/>
-<Channel name="cServUser" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW3"/>
+<Channel name="cServUser" fromSignalWindow="SIGWDW5" toSignalWindow="SIGWDW2"/>
+<Channel name="(cSerNube)" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW3"/>
 </Item>
 <Item id="ITEM2" type="block" name="Base_de_Datos" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
@@ -119,9 +119,19 @@
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW2" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK13" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK14" isFrom="FALSE"/>
 <SentSignals>
 <SignalReference id="SIG8"/>
+<SignalReference id="SIG9"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG10"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK13" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG10"/>
 <SignalReference id="SIG4"/>
 <SignalReference id="SIG5"/>
 </SentSignals>
@@ -129,18 +139,8 @@
 <SignalReference id="SIG6"/>
 <SignalReference id="SIG7"/>
 <SignalReference id="SIG9"/>
-<SignalReference id="SIG10"/>
-<SignalReference id="SIG5"/>
-</ReceivedSignals>
-</SignalWindow>
-<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK14" isFrom="FALSE"/>
-<SentSignals>
 <SignalReference id="SIG11"/>
-<SignalReference id="SIG9"/>
-</SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG8"/>
+<SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>

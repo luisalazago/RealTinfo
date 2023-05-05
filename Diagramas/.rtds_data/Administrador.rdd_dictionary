@@ -13,6 +13,9 @@
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="TRUE">
 <ConnectorReference linkId="LINK1" isFrom="FALSE"/>
+<Connections>
+<Connection name="cSerAdmin"/>
+</Connections>
 <SentSignals>
 <SignalReference id="SIG2"/>
 <SignalReference id="SIG1"/>
@@ -20,6 +23,9 @@
 </SignalWindow>
 <SignalWindow id="SIGWDW3" insideDiagram="TRUE">
 <ConnectorReference linkId="LINK0" isFrom="TRUE"/>
+<Connections>
+<Connection name="cMundoSoporte"/>
+</Connections>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>

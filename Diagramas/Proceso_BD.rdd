@@ -7,54 +7,54 @@
 <SdlFSMSymbol identifier="SYM47" type="sdlText" text="DCL
   informacion info,
   peticion request,
-  respuesta ans;
+  respuesta1 ans;
 
-DCL tt t;" outline_color="-" background_color="-" center_coordinates="1142 114" dimensions="152 104" attached_symbol_id=""/>
+DCL tt t;" outline_color="-" background_color="-" center_coordinates="1143 115" dimensions="152 104" attached_symbol_id=""/>
 <StateTransitionBlock top_left_coordinates="345 457">
-<SdlFSMSymbol identifier="SYM8" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="398 477" dimensions="82 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM8" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="397 477" dimensions="82 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM9" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="398 529" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM9" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="397 529" dimensions="62 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM14" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="398 581" dimensions="106 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM14" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="397 581" dimensions="104 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM70" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="524 529" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM70" type="sdlInputSig" text="answer" outline_color="-" background_color="-" center_coordinates="521 529" dimensions="62 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM71" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="524 581" dimensions="126 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM71" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="521 581" dimensions="124 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
 <StateTransitionBlock top_left_coordinates="18 463">
-<SdlFSMSymbol identifier="SYM15" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="150 483" dimensions="106 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM15" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="154 483" dimensions="104 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM16" type="sdlInputSig" text="info" outline_color="-" background_color="-" center_coordinates="150 535" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM16" type="sdlInputSig" text="info" outline_color="-" background_color="-" center_coordinates="154 535" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM22" type="sdlTask" text="respuesta := info;" outline_color="-" background_color="-" center_coordinates="150 587" dimensions="146 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="ansRequest(respuesta) VIA cServUser" outline_color="-" background_color="-" center_coordinates="150 639" dimensions="264 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM68" type="sdlStop" outline_color="-" background_color="-" center_coordinates="150 681" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM22" type="sdlTask" text="respuesta1 := respuesta;" outline_color="-" background_color="-" center_coordinates="154 587" dimensions="190 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="ansRequest(respuesta1) VIA cServUser" outline_color="-" background_color="-" center_coordinates="154 639" dimensions="272 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM68" type="sdlStop" outline_color="-" background_color="-" center_coordinates="154 681" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
 <StateTransitionBlock top_left_coordinates="707 454">
-<SdlFSMSymbol identifier="SYM19" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="839 474" dimensions="126 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM19" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="843 474" dimensions="124 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM20" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="839 526" dimensions="90 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM20" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="843 526" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM23" type="sdlTask" text="respuesta := errorFound;" outline_color="-" background_color="-" center_coordinates="839 578" dimensions="188 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM21" type="sdlSendSig" text="ansRequest(respuesta) VIA cServUser" outline_color="-" background_color="-" center_coordinates="839 630" dimensions="264 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM25" type="sdlSendSig" text="errorFound VIA cSerNube" outline_color="-" background_color="-" center_coordinates="839 682" dimensions="180 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM69" type="sdlStop" outline_color="-" background_color="-" center_coordinates="839 724" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM23" type="sdlTask" text="respuesta1 := errores;" outline_color="-" background_color="-" center_coordinates="843 578" dimensions="176 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM21" type="sdlSendSig" text="ansRequest(respuesta1) VIA cServUser" outline_color="-" background_color="-" center_coordinates="843 630" dimensions="272 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM25" type="sdlSendSig" text="errorFound VIA cSerNube" outline_color="-" background_color="-" center_coordinates="843 682" dimensions="180 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM69" type="sdlStop" outline_color="-" background_color="-" center_coordinates="843 724" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
-<StateTransitionBlock top_left_coordinates="1001 454">
-<SdlFSMSymbol identifier="SYM43" type="sdlState" text="RecibirRes" outline_color="-" background_color="-" center_coordinates="1109 474" dimensions="90 40" attached_symbol_id=""/>
+<StateTransitionBlock top_left_coordinates="1011 454">
+<SdlFSMSymbol identifier="SYM43" type="sdlState" text="RecibirRes" outline_color="-" background_color="-" center_coordinates="1119 474" dimensions="90 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM44" type="sdlInputSig" text="isInfo(peticion)" outline_color="-" background_color="-" center_coordinates="1109 526" dimensions="132 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM44" type="sdlInputSig" text="isInfo(peticion)" outline_color="-" background_color="-" center_coordinates="1119 526" dimensions="132 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM45" type="sdlSendSig" text="isInfo(peticion) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="1109 578" dimensions="216 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM46" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="1109 630" dimensions="82 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM45" type="sdlSendSig" text="isInfo(peticion) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="1119 578" dimensions="216 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM46" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="1119 630" dimensions="82 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
