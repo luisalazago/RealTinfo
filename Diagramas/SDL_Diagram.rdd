@@ -63,8 +63,7 @@
 </Link>
 
 <Link linkId="LINK190" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cMundoSoporte
-</Text>
+<Text>cMundoSoporte</Text>
 <Connector attachedSymbolId="SYMB16" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
@@ -115,8 +114,7 @@ errorFound, tiempo]
 </Link>
 
 <Link linkId="LINK174" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cDispositivos
-</Text>
+<Text>cDispositivos</Text>
 <Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[move, warning,
 busy, sendInfo]
@@ -134,8 +132,7 @@ busy, sendInfo]
 </Link>
 
 <Link linkId="LINK173" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cDispoContro
-</Text>
+<Text>cDispoContro</Text>
 <Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]
 </Text>
@@ -155,8 +152,7 @@ sendInfo]
 </Link>
 
 <Link linkId="LINK160" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cControlador
-</Text>
+<Text>cControlador</Text>
 <Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="x" position="-0.766233766234" endType="midarrow">
 <Text id="1">[sendInfo, warning]
 </Text>
@@ -188,8 +184,7 @@ sendInfo]
 </Link>
 
 <Link linkId="LINK191" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cSerAdmin
-</Text>
+<Text>cSerAdmin</Text>
 <Connector attachedSymbolId="SYMB25" type="chnl" isOutside="TRUE" side="y" position="0.5" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
@@ -218,10 +213,11 @@ errorFound]
 SIGNAL move(boolean), warning(device, senal);
 SIGNAL sendInfo(info);
 SIGNAL requestInfo(request), isInfo(request);
-SIGNAL busy, tiempo(t);
+SIGNAL busy(integer), tiempo(t);
 SIGNAL ansRequest(ans);
 SIGNAL errorFound;
-SIGNAL turnCamera(boolean), turnMic(boolean);</Text>
+SIGNAL turnCamera(boolean), turnMic(boolean);
+</Text>
 </Symbol>
 
 <Symbol symbolId="SYMB29" type="sdlText" xCenter="286" yCenter="429" fixedDimensions="FALSE" width="330" height="374" color="#000000" fillColor="#FFFFFF">

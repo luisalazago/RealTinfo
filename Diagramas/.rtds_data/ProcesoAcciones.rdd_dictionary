@@ -46,9 +46,9 @@
 <SymbolReference symbolId="SYM28" positions="5,4"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM16" type="variable" name="flag" parentId="ITEM1" scope="none" variableTypeName="INTEGER" variableTypeId="ITEM13" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM16" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM12" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYM28" positions="6,4"/>
+<SymbolReference symbolId="SYM28" positions="2,4"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM17" type="variable" name="dispositivo" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM11" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -56,14 +56,14 @@
 <SymbolReference symbolId="SYM28" positions="3,4"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM18" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM12" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM28" positions="2,4"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM19" type="variable" name="segnal" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM18" type="variable" name="segnal" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM28" positions="4,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM19" type="variable" name="flag" parentId="ITEM1" scope="none" variableTypeName="INTEGER" variableTypeId="ITEM13" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM28" positions="6,4"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM2" type="variable" name="true" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -88,9 +88,9 @@
 <Item id="ITEM3" type="variable" name="tt" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM88"/>
-<SymbolReference symbolId="SYM89"/>
-<SymbolReference symbolId="SYM73"/>
 <SymbolReference symbolId="SYM67"/>
+<SymbolReference symbolId="SYM73"/>
+<SymbolReference symbolId="SYM89"/>
 <SymbolReference symbolId="SYM61"/>
 <SymbolReference symbolId="SYM84"/>
 </UsingSymbols>
