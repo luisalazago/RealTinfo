@@ -85,7 +85,7 @@
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="e" position="0.0634441087613" endType="midarrow">
-<Text id="1">[ansRequest]
+<Text id="1">[ansRequest, td]
 </Text>
 <Text id="2"></Text>
 </Connector>
@@ -216,11 +216,10 @@ SIGNAL requestInfo(request), isInfo(request);
 SIGNAL busy(integer), tiempo(t);
 SIGNAL ansRequest(ans);
 SIGNAL errorFound;
-SIGNAL turnCamera(boolean), turnMic(boolean);
-</Text>
+SIGNAL turnCamera(boolean), turnMic(boolean);</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB29" type="sdlText" xCenter="286" yCenter="429" fixedDimensions="FALSE" width="330" height="374" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="297" yCenter="440" fixedDimensions="FALSE" width="352" height="396" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Definition of the types */
 NEWTYPE info
@@ -244,8 +243,10 @@ NEWTYPE ans
 ENDNEWTYPE;
 
 SYNTYPE t = INTEGER
+  DEFAULT 1
   CONSTANTS 1:10
-ENDSYNTYPE;</Text>
+ENDSYNTYPE;
+</Text>
 </Symbol>
 </Symbol>
 </DiagramPartition>

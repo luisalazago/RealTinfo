@@ -10,7 +10,7 @@
 <SymbolReference symbolId="SYM8"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM3" type="variable" name="segnal" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM3" type="variable" name="segnal" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM13"/>
 <SymbolReference symbolId="SYM11"/>
@@ -21,7 +21,7 @@
 <SymbolReference symbolId="SYM8"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM5" type="variable" name="dispositivo" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM5" type="variable" name="dispositivo" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM13"/>
 <SymbolReference symbolId="SYM11"/>

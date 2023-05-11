@@ -30,9 +30,9 @@ DCL tt t;" outline_color="-" background_color="-" center_coordinates="1143 115" 
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM16" type="sdlInputSig" text="info" outline_color="-" background_color="-" center_coordinates="154 535" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM22" type="sdlTask" text="respuesta1 := respuesta;" outline_color="-" background_color="-" center_coordinates="154 587" dimensions="190 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM22" type="sdlTask" text="respuesta1 := respuesta;" outline_color="-" background_color="-" center_coordinates="154 587" dimensions="188 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="ansRequest(respuesta1) VIA cServUser" outline_color="-" background_color="-" center_coordinates="154 639" dimensions="272 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM68" type="sdlStop" outline_color="-" background_color="-" center_coordinates="154 681" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM76" type="sdlState" text="Comunicaciones" outline_color="-" background_color="-" center_coordinates="154 691" dimensions="120 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
@@ -41,10 +41,10 @@ DCL tt t;" outline_color="-" background_color="-" center_coordinates="1143 115" 
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM20" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="843 526" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM23" type="sdlTask" text="respuesta1 := errores;" outline_color="-" background_color="-" center_coordinates="843 578" dimensions="176 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM23" type="sdlTask" text="respuesta1 := errores;" outline_color="-" background_color="-" center_coordinates="843 578" dimensions="174 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM21" type="sdlSendSig" text="ansRequest(respuesta1) VIA cServUser" outline_color="-" background_color="-" center_coordinates="843 630" dimensions="272 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM25" type="sdlSendSig" text="errorFound VIA cSerNube" outline_color="-" background_color="-" center_coordinates="843 682" dimensions="180 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM69" type="sdlStop" outline_color="-" background_color="-" center_coordinates="843 724" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM77" type="sdlState" text="Comunicaciones" outline_color="-" background_color="-" center_coordinates="843 734" dimensions="120 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
@@ -70,14 +70,14 @@ DCL tt t;" outline_color="-" background_color="-" center_coordinates="1143 115" 
 <SdlFSMSymbol identifier="SYM53" type="sdlInputSig" text="sendInfo(informacion)" outline_color="-" background_color="-" center_coordinates="140 178" dimensions="166 40" attached_symbol_id=""/>
 <Transition>
 <SdlFSMSymbol identifier="SYM54" type="sdlSendSig" text="sendInfo(informacion) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="140 230" dimensions="250 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM55" type="sdlStop" outline_color="-" background_color="-" center_coordinates="140 272" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM72" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="140 282" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM56" type="sdlInputSig" text="td" outline_color="-" background_color="-" center_coordinates="341 178" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 <SdlFSMSymbol identifier="SYM57" type="sdlSendSig" text="td VIA cServUser" outline_color="-" background_color="-" center_coordinates="341 230" dimensions="132 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM58" type="sdlStop" outline_color="-" background_color="-" center_coordinates="341 272" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM73" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="341 282" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
@@ -91,14 +91,14 @@ DCL tt t;" outline_color="-" background_color="-" center_coordinates="1143 115" 
 <SdlFSMSymbol identifier="SYM62" type="sdlInputSig" text="lt" outline_color="-" background_color="-" center_coordinates="765 178" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 <SdlFSMSymbol identifier="SYM63" type="sdlSendSig" text="dropData VIA cProcBD" outline_color="-" background_color="-" center_coordinates="765 230" dimensions="160 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM64" type="sdlStop" outline_color="-" background_color="-" center_coordinates="765 272" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM74" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="765 282" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM65" type="sdlInputSig" text="tiempo(tt)" outline_color="-" background_color="-" center_coordinates="942 178" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
 <SdlFSMSymbol identifier="SYM66" type="sdlSendSig" text="tiempo(tt) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="942 230" dimensions="174 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM67" type="sdlStop" outline_color="-" background_color="-" center_coordinates="942 272" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM75" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="942 282" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
