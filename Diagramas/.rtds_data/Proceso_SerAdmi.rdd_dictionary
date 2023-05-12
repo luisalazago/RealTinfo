@@ -37,7 +37,7 @@
 <SymbolReference symbolId="SYM8" positions="2,0"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM8" type="state" name="Problema" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM8" type="state" name="Comunicaciones_SerAdmin" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM10"/>
 </DefiningSymbols>

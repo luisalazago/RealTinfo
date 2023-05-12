@@ -35,17 +35,17 @@
 <SymbolReference symbolId="SYM4" positions="0,4"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM16" type="variable" name="tt" parentId="ITEM1" scope="none" variableTypeName="t" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM4" positions="3,4"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM17" type="variable" name="nt" parentId="ITEM1" scope="none" variableTypeName="t" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM16" type="variable" name="nt" parentId="ITEM1" scope="none" variableTypeName="t" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM4" positions="4,4"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM18" type="state" name="Senales" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM17" type="variable" name="tt" parentId="ITEM1" scope="none" variableTypeName="t" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="3,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM18" type="state" name="Comunicaciones_BD" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM2"/>
 </DefiningSymbols>

@@ -12,7 +12,7 @@
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK0" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK3" isFrom="TRUE"/>
 <Connections>
 <Connection name="cDispoContro"/>
 </Connections>
@@ -22,7 +22,7 @@
 </SentSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW3" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK1" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK2" isFrom="TRUE"/>
 <Connections>
 <Connection name="cControlador"/>
 </Connections>
@@ -42,14 +42,14 @@
 <SymbolReference symbolId="SYMB2"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW1" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK1" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK2" isFrom="FALSE"/>
 <SentSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
 </SentSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW2" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK0" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK3" isFrom="FALSE"/>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>

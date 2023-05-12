@@ -42,8 +42,8 @@
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
-<SignalReference id="SIG4"/>
 <SignalReference id="SIG5"/>
+<SignalReference id="SIG4"/>
 </ReceivedSignals>
 </Body>
 </Item>
@@ -70,14 +70,14 @@
 <SymbolReference symbolId="SYM47" positions="5,4"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM14" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM9" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM47" positions="1,0"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM15" type="variable" name="peticion" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM14" type="variable" name="peticion" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM47" positions="2,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM15" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM9" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM47" positions="1,0"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM16" type="state" name="Respuesta" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -104,7 +104,7 @@
 <SymbolReference symbolId="SYM71"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM19" type="state" name="Comunicaciones" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM19" type="state" name="Comunicaciones_SerBDNube" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM52"/>
 </DefiningSymbols>

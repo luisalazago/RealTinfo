@@ -117,7 +117,7 @@
 <SymbolReference symbolId="SYM2"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM23" type="state" name="Comunicaciones" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM23" type="state" name="Comunicaciones_DispoContro" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM50"/>
 </DefiningSymbols>

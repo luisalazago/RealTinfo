@@ -10,7 +10,7 @@
 <SymbolReference symbolId="SYM4" positions="3,0"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM11" type="state" name="Comunicaciones" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM11" type="state" name="Comunicaciones_ControSer" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM18"/>
 </DefiningSymbols>

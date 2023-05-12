@@ -47,7 +47,7 @@
 </Symbol>
 </Symbol>
 
-<Link linkId="LINK187" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK192" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cAdministrativo</Text>
 <Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.25" endType="midarrow">
 <Text id="1">[]</Text>
@@ -95,7 +95,7 @@
 
 </Link>
 
-<Link linkId="LINK189" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK194" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[sendInfo, isInfo,
@@ -131,7 +131,7 @@ busy, sendInfo]
 
 </Link>
 
-<Link linkId="LINK173" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK195" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cDispoContro</Text>
 <Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]
@@ -151,7 +151,7 @@ sendInfo]
 
 </Link>
 
-<Link linkId="LINK160" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK196" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cControlador</Text>
 <Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="x" position="-0.766233766234" endType="midarrow">
 <Text id="1">[sendInfo, warning]
@@ -167,7 +167,7 @@ sendInfo]
 
 </Link>
 
-<Link linkId="LINK188" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK193" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cControSer</Text>
 <Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
@@ -219,7 +219,7 @@ SIGNAL errorFound;
 SIGNAL turnCamera(boolean), turnMic(boolean);</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB29" type="sdlText" xCenter="297" yCenter="440" fixedDimensions="FALSE" width="352" height="396" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="297" yCenter="440" fixedDimensions="FALSE" width="330" height="396" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Definition of the types */
 NEWTYPE info
@@ -245,8 +245,7 @@ ENDNEWTYPE;
 SYNTYPE t = INTEGER
   DEFAULT 1
   CONSTANTS 1:10
-ENDSYNTYPE;
-</Text>
+ENDSYNTYPE;</Text>
 </Symbol>
 </Symbol>
 </DiagramPartition>
