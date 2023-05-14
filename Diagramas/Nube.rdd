@@ -21,11 +21,12 @@
 <Text>Base_de_Datos</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB4" type="sdlText" xCenter="187" yCenter="132" fixedDimensions="FALSE" width="220" height="88" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB4" type="sdlText" xCenter="198" yCenter="132" fixedDimensions="FALSE" width="242" height="88" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Signals of the system*/
-SIGNAL answer, info1;
-SIGNAL dropData;</Text>
+SIGNAL answer(integer), info1;
+SIGNAL dropData;
+</Text>
 </Symbol>
 </Symbol>
 
