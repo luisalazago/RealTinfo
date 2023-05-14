@@ -17,24 +17,6 @@
 </Symbol>
 </Symbol>
 
-<Link linkId="LINK24" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cAdministrativo</Text>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="0.497382198953" endType="midarrow">
-<Text id="1">[warning, errorFound]
-</Text>
-<Text id="2">cAdministrativo
-</Text>
-</Connector>
-<Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[]</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="v" length="132"/>
-<LinkSegment orientation="h" length="-583"/>
-<LinkSegment orientation="v" length="143"/>
-
-</Link>
-
 <Link linkId="LINK23" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cControSer</Text>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="-0.00174520069808" endType="midarrow">
@@ -50,6 +32,24 @@
 <LinkSegment orientation="v" length="-257"/>
 <LinkSegment orientation="h" length="-297"/>
 <LinkSegment orientation="v" length="-242"/>
+
+</Link>
+
+<Link linkId="LINK24" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cAdministrativo</Text>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="0.497382198953" endType="midarrow">
+<Text id="1">[warning, errorFound]
+</Text>
+<Text id="2">cSerAdmin
+</Text>
+</Connector>
+<Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="132"/>
+<LinkSegment orientation="h" length="-583"/>
+<LinkSegment orientation="v" length="143"/>
 
 </Link>
 

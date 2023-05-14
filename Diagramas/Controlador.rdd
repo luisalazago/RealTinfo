@@ -18,11 +18,12 @@
 </Symbol>
 
 <Link linkId="LINK2" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cControlador1</Text>
+<Text>cControSer1
+</Text>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="e" position="-0.00516129032258" endType="midarrow">
 <Text id="1">[sendInfo, warning]
 </Text>
-<Text id="2">cControlador
+<Text id="2">cControSer
 </Text>
 </Connector>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
@@ -38,12 +39,15 @@
 <Link linkId="LINK3" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cDispoContro1</Text>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="-0.59891107078" endType="midarrow">
-<Text id="1">[]</Text>
+<Text id="1">[turnMic,
+turnCamera,
+busy]
+</Text>
 <Text id="2">cDispoContro
 </Text>
 </Connector>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[sendInfo, warning]
+<Text id="1">[sendInfo, warning, busy, move]
 </Text>
 <Text id="2"></Text>
 </Connector>

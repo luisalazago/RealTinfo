@@ -7,6 +7,14 @@
 </Signal>
 <Signal id="SIG2" name="warning">
 </Signal>
+<Signal id="SIG3" name="turnMic">
+</Signal>
+<Signal id="SIG4" name="turnCamera">
+</Signal>
+<Signal id="SIG5" name="busy">
+</Signal>
+<Signal id="SIG6" name="move">
+</Signal>
 <Item id="ITEM1" type="block" name="Controlador" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYMB1"/>
@@ -19,19 +27,26 @@
 <SentSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
 </SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW3" insideDiagram="TRUE">
 <ConnectorReference linkId="LINK2" isFrom="TRUE"/>
 <Connections>
-<Connection name="cControlador"/>
+<Connection name="cControSer"/>
 </Connections>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
 </ReceivedSignals>
 </SignalWindow>
-<Channel name="cControlador1" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
+<Channel name="cControSer1" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
 <Channel name="cDispoContro1" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW2"/>
 </Item>
 <Item id="ITEM2" type="process" name="Proceso_Controlador" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -50,9 +65,16 @@
 </SignalWindow>
 <SignalWindow id="SIGWDW2" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK3" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>

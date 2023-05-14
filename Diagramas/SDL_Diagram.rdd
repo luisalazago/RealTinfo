@@ -11,7 +11,7 @@
 <Description></Description>
 <Text></Text>
 
-<Symbol symbolId="SYMB14" type="sdlBlk" xCenter="330" yCenter="352" fixedDimensions="FALSE" width="110" height="44" color="#000000" fillColor="#C4EFED">
+<Symbol symbolId="SYMB14" type="sdlBlk" xCenter="462" yCenter="352" fixedDimensions="FALSE" width="110" height="44" color="#000000" fillColor="#C4EFED">
 <Description></Description>
 <Text>Controlador</Text>
 </Symbol>
@@ -30,35 +30,60 @@
 <Description></Description>
 <Text>Nube</Text>
 </Symbol>
-
-<Symbol symbolId="SYMB23" type="sdlPrcs" xCenter="154" yCenter="88" fixedDimensions="TRUE" width="176" height="44" color="#000000" fillColor="#C4EFED">
-<Description></Description>
-<Text>Proceso_DispoContro</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB24" type="sdlPrcs" xCenter="594" yCenter="605" fixedDimensions="TRUE" width="154" height="44" color="#000000" fillColor="#C4EFED">
-<Description></Description>
-<Text>Proceso_ControSer</Text>
-</Symbol>
+<Link linkId="LINK199" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cDispoContro
+</Text>
+<Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[busy, move, warning,
+sendInfo]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="w" position="-0.0694864048338" endType="midarrow">
+<Text id="1">[turnMic, turnCamera,
+busy]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="-275"/>
+<LinkSegment orientation="v" length="-44"/>
+<LinkSegment orientation="h" length="-187"/>
 
-<Symbol symbolId="SYMB25" type="sdlPrcs" xCenter="858" yCenter="132" fixedDimensions="TRUE" width="154" height="44" color="#000000" fillColor="#C4EFED">
-<Description></Description>
-<Text>Proceso_SerAdmi</Text>
-</Symbol>
-</Symbol>
+</Link>
 
-<Link linkId="LINK192" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cAdministrativo</Text>
-<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.25" endType="midarrow">
+<Link linkId="LINK200" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cControSer
+</Text>
+<Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
 </Connector>
-<Connector attachedSymbolId="SYMB25" type="chnl" isOutside="TRUE" side="x" position="0.142857142857" endType="midarrow">
+<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[warning, sendInfo]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="396"/>
+
+</Link>
+
+<Link linkId="LINK203" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cSerAdmin
+</Text>
+<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB16" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[warning, errorFound]
 </Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="-220"/>
+<LinkSegment orientation="v" length="-121"/>
+<LinkSegment orientation="h" length="-374"/>
+<LinkSegment orientation="v" length="-110"/>
 
 </Link>
 
@@ -77,7 +102,7 @@
 
 </Link>
 
-<Link linkId="LINK156" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK205" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cMundo</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0909090909091" endType="midarrow">
 <Text id="1">[requestInfo]
@@ -95,7 +120,7 @@
 
 </Link>
 
-<Link linkId="LINK194" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK204" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[sendInfo, isInfo,
@@ -106,92 +131,6 @@ td, lt, tiempo]
 <Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[requestInfo,
 errorFound, tiempo]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="h" length="-374"/>
-
-</Link>
-
-<Link linkId="LINK174" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cDispositivos</Text>
-<Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[move, warning,
-busy, sendInfo]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="w" position="0.229607250755" endType="midarrow">
-<Text id="1">[turnCamera, turnMic, busy]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="v" length="319"/>
-<LinkSegment orientation="h" length="-154"/>
-
-</Link>
-
-<Link linkId="LINK195" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cDispoContro</Text>
-<Connector attachedSymbolId="SYMB23" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="x" position="-0.6" endType="midarrow">
-<Text id="1">[warning,
-sendInfo]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="h" length="242"/>
-<LinkSegment orientation="v" length="198"/>
-<LinkSegment orientation="h" length="-99"/>
-<LinkSegment orientation="v" length="66"/>
-
-</Link>
-
-<Link linkId="LINK196" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cControlador</Text>
-<Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="x" position="-0.766233766234" endType="midarrow">
-<Text id="1">[sendInfo, warning]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[]</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="v" length="-253"/>
-<LinkSegment orientation="h" length="-205"/>
-
-</Link>
-
-<Link linkId="LINK193" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cControSer</Text>
-<Connector attachedSymbolId="SYMB24" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[]</Text>
-<Text id="2"></Text>
-</Connector>
-<Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[warning, sendInfo]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="h" length="264"/>
-<LinkSegment orientation="v" length="-253"/>
-
-</Link>
-
-<Link linkId="LINK191" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cSerAdmin</Text>
-<Connector attachedSymbolId="SYMB25" type="chnl" isOutside="TRUE" side="y" position="0.5" endType="midarrow">
-<Text id="1">[]</Text>
-<Text id="2"></Text>
-</Connector>
-<Connector attachedSymbolId="SYMB16" type="chnl" isOutside="TRUE" side="y" position="1.0" endType="midarrow">
-<Text id="1">[warning,
-errorFound]
 </Text>
 <Text id="2"></Text>
 </Connector>
