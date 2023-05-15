@@ -36,7 +36,7 @@ DCL tt t;" outline_color="-" background_color="-" center_coordinates="1149 115" 
 <StateTransitionBlock top_left_coordinates="18 463">
 <SdlFSMSymbol identifier="SYM15" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="154 483" dimensions="104 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM16" type="sdlInputSig" text="info" outline_color="-" background_color="-" center_coordinates="154 535" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM16" type="sdlInputSig" text="info1" outline_color="-" background_color="-" center_coordinates="154 535" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 <SdlFSMSymbol identifier="SYM22" type="sdlTask" text="respuesta1 := respuesta;" outline_color="-" background_color="-" center_coordinates="154 587" dimensions="188 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="ansRequest(respuesta1) VIA cServUser" outline_color="-" background_color="-" center_coordinates="154 639" dimensions="272 40" attached_symbol_id=""/>

@@ -27,7 +27,9 @@ info1]
 </Text>
 </Connector>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[tiempo]
+<Text id="1">[tiempo,
+dropData,
+isInfo]
 </Text>
 <Text id="2"></Text>
 </Connector>
