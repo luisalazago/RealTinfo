@@ -129,10 +129,10 @@
 </SignalWindow>
 <Channel name="cDispoContro" fromSignalWindow="SIGWDW1" toSignalWindow="SIGWDW10"/>
 <Channel name="cControSer" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW3"/>
-<Channel name="cSerAdmin" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW6"/>
-<Channel name="cSerNube" fromSignalWindow="SIGWDW9" toSignalWindow="SIGWDW5"/>
-<Channel name="cMundoSoporte" fromSignalWindow="SIGWDW7" toSignalWindow="SIGWDW11"/>
-<Channel name="cMundo" fromSignalWindow="SIGWDW8" toSignalWindow="SIGWDW12"/>
+<Channel name="cSerAdmin" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW8"/>
+<Channel name="cSerNube" fromSignalWindow="SIGWDW7" toSignalWindow="SIGWDW5"/>
+<Channel name="cMundo" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW12"/>
+<Channel name="cMundoSoporte" fromSignalWindow="SIGWDW9" toSignalWindow="SIGWDW11"/>
 </Item>
 <Item id="ITEM10" type="block" name="Servidor" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
@@ -170,36 +170,14 @@
 </ReceivedSignals>
 </SignalWindow>
 </Item>
-<Item id="ITEM11" type="block" name="Administrador" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM11" type="block" name="Nube" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB16"/>
+<SymbolReference symbolId="SYMB17"/>
 </DefiningSymbols>
 <UsingSymbols>
-<SymbolReference symbolId="SYMB16"/>
+<SymbolReference symbolId="SYMB17"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW6" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK210" isFrom="FALSE"/>
-<ReceivedSignals>
-<SignalReference id="SIG5"/>
-<SignalReference id="SIG7"/>
-</ReceivedSignals>
-</SignalWindow>
-<SignalWindow id="SIGWDW7" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK190" isFrom="TRUE"/>
-<SentSignals>
-<SignalReference id="SIG7"/>
-<SignalReference id="SIG5"/>
-</SentSignals>
-</SignalWindow>
-</Item>
-<Item id="ITEM12" type="block" name="Nube" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYMB17"/>
-</DefiningSymbols>
-<UsingSymbols>
-<SymbolReference symbolId="SYMB17"/>
-</UsingSymbols>
-<SignalWindow id="SIGWDW8" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK206" isFrom="TRUE"/>
 <SentSignals>
 <SignalReference id="SIG13"/>
@@ -209,7 +187,7 @@
 <SignalReference id="SIG11"/>
 </ReceivedSignals>
 </SignalWindow>
-<SignalWindow id="SIGWDW9" insideDiagram="FALSE">
+<SignalWindow id="SIGWDW7" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK211" isFrom="TRUE"/>
 <SentSignals>
 <SignalReference id="SIG11"/>
@@ -224,14 +202,36 @@
 </ReceivedSignals>
 </SignalWindow>
 </Item>
+<Item id="ITEM12" type="block" name="Administrador" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB16"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB16"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW8" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK210" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG7"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW9" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK190" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG5"/>
+</SentSignals>
+</SignalWindow>
+</Item>
 <Item id="ITEM13" type="type" name="senal" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB29" positions="9,8"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM14" type="type" name="t" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="TRUE" syntypeBaseTypeId="ITEM5">
+<Item id="ITEM14" type="type" name="device" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="21,8"/>
+<SymbolReference symbolId="SYMB29" positions="5,8"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM15" type="type" name="info" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -239,19 +239,19 @@
 <SymbolReference symbolId="SYMB29" positions="1,8"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM16" type="type" name="ans" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="17,8"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM17" type="type" name="device" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="5,8"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM18" type="type" name="request" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM16" type="type" name="request" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB29" positions="13,8"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM17" type="type" name="t" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="TRUE" syntypeBaseTypeId="ITEM5">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB29" positions="21,8"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM18" type="type" name="ans" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB29" positions="17,8"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM19" type="variable" name="get" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM4" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -265,24 +265,24 @@
 <SymbolReference symbolId="SYMB28"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM20" type="variable" name="externo" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM2" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM20" type="variable" name="respuesta" parentId="ITEM1" scope="none" variableTypeName="ans" variableTypeId="ITEM7" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB29" positions="18,18"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM21" type="variable" name="errores" parentId="ITEM1" scope="none" variableTypeName="ans" variableTypeId="ITEM7" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB29" positions="18,9"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM22" type="variable" name="externo" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM2" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB29" positions="10,17"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM21" type="variable" name="batery" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM2" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM23" type="variable" name="camera" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM6" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="10,9"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM22" type="variable" name="almacenamiento" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM2" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="10,26"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM23" type="variable" name="audio" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM8" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="2,16"/>
+<SymbolReference symbolId="SYMB29" positions="6,9"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM24" type="variable" name="video" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM8" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -290,29 +290,29 @@
 <SymbolReference symbolId="SYMB29" positions="2,9"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM25" type="variable" name="bad_request" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM4" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="14,20"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM26" type="variable" name="microphone" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM6" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM25" type="variable" name="microphone" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM6" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB29" positions="6,17"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM27" type="variable" name="errores" parentId="ITEM1" scope="none" variableTypeName="ans" variableTypeId="ITEM7" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM26" type="variable" name="bad_request" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM4" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="18,9"/>
+<SymbolReference symbolId="SYMB29" positions="14,20"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM28" type="variable" name="camera" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM6" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM27" type="variable" name="audio" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM8" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="6,9"/>
+<SymbolReference symbolId="SYMB29" positions="2,16"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM29" type="variable" name="respuesta" parentId="ITEM1" scope="none" variableTypeName="ans" variableTypeId="ITEM7" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM28" type="variable" name="read" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM4" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="18,18"/>
+<SymbolReference symbolId="SYMB29" positions="14,14"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM29" type="variable" name="sensor" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM6" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB29" positions="6,29"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM3" type="type" name="boolean" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -320,14 +320,14 @@
 <SymbolReference symbolId="SYMB28"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM30" type="variable" name="read" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM4" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM30" type="variable" name="almacenamiento" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM2" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="14,14"/>
+<SymbolReference symbolId="SYMB29" positions="10,26"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM31" type="variable" name="sensor" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM6" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM31" type="variable" name="batery" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM2" isSynonym="TRUE" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
-<SymbolReference symbolId="SYMB29" positions="6,29"/>
+<SymbolReference symbolId="SYMB29" positions="10,9"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM4" type="type" name="request" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
