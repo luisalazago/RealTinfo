@@ -82,14 +82,14 @@
 <SymbolReference symbolId="SYM47" positions="5,0"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM17" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM10" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM47" positions="1,0"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM18" type="variable" name="peticion" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM4" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM17" type="variable" name="peticion" parentId="ITEM1" scope="none" variableTypeName="request" variableTypeId="ITEM4" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM47" positions="2,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM18" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM10" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM47" positions="1,0"/>
 </DefiningSymbols>
 </Item>
 <Item id="ITEM19" type="state" name="Respuesta" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
