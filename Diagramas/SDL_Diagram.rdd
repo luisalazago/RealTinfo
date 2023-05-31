@@ -32,9 +32,8 @@
 </Symbol>
 </Symbol>
 
-<Link linkId="LINK199" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cDispoContro
-</Text>
+<Link linkId="LINK209" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cDispoContro</Text>
 <Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[busy, move, warning,
 sendInfo]
@@ -53,9 +52,8 @@ busy]
 
 </Link>
 
-<Link linkId="LINK200" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cControSer
-</Text>
+<Link linkId="LINK212" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cControSer</Text>
 <Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
@@ -69,9 +67,8 @@ busy]
 
 </Link>
 
-<Link linkId="LINK203" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cSerAdmin
-</Text>
+<Link linkId="LINK210" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cSerAdmin</Text>
 <Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
@@ -102,7 +99,7 @@ busy]
 
 </Link>
 
-<Link linkId="LINK205" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK206" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cMundo</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0909090909091" endType="midarrow">
 <Text id="1">[requestInfo]
@@ -120,11 +117,11 @@ busy]
 
 </Link>
 
-<Link linkId="LINK204" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK211" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB17" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[sendInfo, isInfo,
-td, lt, tiempo]
+td, lt]
 </Text>
 <Text id="2"></Text>
 </Connector>
@@ -152,13 +149,14 @@ errorFound, tiempo]
 SIGNAL move(boolean), warning(device, senal);
 SIGNAL sendInfo(info);
 SIGNAL requestInfo(request), isInfo(request);
-SIGNAL busy(integer), tiempo(t);
+SIGNAL busy(integer), tiempo;
 SIGNAL ansRequest(ans);
 SIGNAL errorFound;
-SIGNAL turnCamera(boolean), turnMic(boolean);</Text>
+SIGNAL turnCamera(boolean), turnMic(boolean);
+</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB29" type="sdlText" xCenter="297" yCenter="440" fixedDimensions="FALSE" width="330" height="396" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="297" yCenter="429" fixedDimensions="FALSE" width="330" height="396" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Definition of the types */
 NEWTYPE info
@@ -174,7 +172,7 @@ NEWTYPE senal
 ENDNEWTYPE;
 
 NEWTYPE request
-  LITERALS get, read; 
+  LITERALS get, read, bad_request; 
 ENDNEWTYPE;
 
 NEWTYPE ans
@@ -182,8 +180,8 @@ NEWTYPE ans
 ENDNEWTYPE;
 
 SYNTYPE t = INTEGER
-  DEFAULT 1
-  CONSTANTS 1:10
+  DEFAULT 0
+  CONSTANTS 0:90
 ENDSYNTYPE;</Text>
 </Symbol>
 </Symbol>

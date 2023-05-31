@@ -5,8 +5,8 @@
 <DictionaryObjects version="10330" language="sdl" diagramType="prcs">
 <Signal id="SIG1" name="busy">
 <UsingSymbols>
+<SymbolReference symbolId="SYM53" usingKind="output"/>
 <SymbolReference symbolId="SYM34" usingKind="output"/>
-<SymbolReference symbolId="SYM41" usingKind="output"/>
 <SymbolReference symbolId="SYM39" usingKind="input"/>
 <SymbolReference symbolId="SYM28" usingKind="input"/>
 </UsingSymbols>
@@ -14,12 +14,12 @@
 <Signal id="SIG2" name="turnMic">
 <UsingSymbols>
 <SymbolReference symbolId="SYM35" usingKind="output"/>
-<SymbolReference symbolId="SYM42" usingKind="output"/>
+<SymbolReference symbolId="SYM54" usingKind="output"/>
 </UsingSymbols>
 </Signal>
 <Signal id="SIG3" name="turnCamera">
 <UsingSymbols>
-<SymbolReference symbolId="SYM43" usingKind="output"/>
+<SymbolReference symbolId="SYM55" usingKind="output"/>
 <SymbolReference symbolId="SYM36" usingKind="output"/>
 </UsingSymbols>
 </Signal>
@@ -34,8 +34,8 @@
 <SentSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
-<SignalReference id="SIG3"/>
 <SignalReference id="SIG4"/>
+<SignalReference id="SIG3"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
@@ -43,151 +43,144 @@
 </ReceivedSignals>
 </Body>
 </Item>
-<Item id="ITEM10" type="variable" name="segnal" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM12"/>
-<SymbolReference symbolId="SYM10"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM11" type="variable" name="informacion" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM10" type="variable" name="informacion" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM46"/>
 <SymbolReference symbolId="SYM47"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM12" type="type" name="device" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM11" type="type" name="device" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM6"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM13" type="type" name="info" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM12" type="type" name="info" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM6"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM14" type="variable" name="Ti" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM20"/>
-<SymbolReference symbolId="SYM21"/>
-<SymbolReference symbolId="SYM26"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM15" type="type" name="INTEGER" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM13" type="type" name="INTEGER" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM6"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM16" type="variable" name="segnal" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM14" type="variable" name="dispositivo" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM12"/>
+<SymbolReference symbolId="SYM10"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM15" type="variable" name="segnal" parentId="ITEM1" scope="none" variableTypeName="senal" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM6" positions="6,0"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM17" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM13" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM6" positions="4,0"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM18" type="variable" name="m" parentId="ITEM1" scope="none" variableTypeName="BOOLEAN" variableTypeId="ITEM4" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM6" positions="3,0"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM19" type="variable" name="b" parentId="ITEM1" scope="none" variableTypeName="INTEGER" variableTypeId="ITEM15" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM6" positions="2,0"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM2" type="variable" name="m" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM17"/>
-<SymbolReference symbolId="SYM9"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM20" type="variable" name="Ti" parentId="ITEM1" scope="none" variableTypeName="t" variableTypeId="ITEM8" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM16" type="variable" name="b" parentId="ITEM1" scope="none" variableTypeName="INTEGER" variableTypeId="ITEM13" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM6" positions="1,0"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM21" type="variable" name="dispositivo" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM12" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM17" type="variable" name="flag" parentId="ITEM1" scope="none" variableTypeName="INTEGER" variableTypeId="ITEM13" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM6" positions="5,0"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM22" type="state" name="Comunicaciones_Controlador" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM18" type="variable" name="m" parentId="ITEM1" scope="none" variableTypeName="BOOLEAN" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM6" positions="2,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM19" type="variable" name="informacion" parentId="ITEM1" scope="none" variableTypeName="info" variableTypeId="ITEM12" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM6" positions="3,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM2" type="variable" name="NOW" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM85"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM20" type="variable" name="dispositivo" parentId="ITEM1" scope="none" variableTypeName="device" variableTypeId="ITEM11" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM6" positions="4,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM21" type="state" name="Comunicaciones_Controlador" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM8"/>
 </DefiningSymbols>
 <UsingSymbols>
+<SymbolReference symbolId="SYM44"/>
 <SymbolReference symbolId="SYM32"/>
 <SymbolReference symbolId="SYM8"/>
 <SymbolReference symbolId="SYM48"/>
 <SymbolReference symbolId="SYM37"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM23" type="state" name="Prender" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM22" type="state" name="Prender" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM27"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM24" type="state" name="Apagar" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM23" type="state" name="Apagar" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM38"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM25" type="state" name="ReicbirInfo" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM44"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM26" type="state" name="RecibirInfo" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM24" type="state" name="RecibirInfo" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM45"/>
 </DefiningSymbols>
-</Item>
-<Item id="ITEM3" type="variable" name="b" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
-<SymbolReference symbolId="SYM39"/>
-<SymbolReference symbolId="SYM28"/>
-<SymbolReference symbolId="SYM29"/>
-<SymbolReference symbolId="SYM33"/>
-<SymbolReference symbolId="SYM40"/>
-<SymbolReference symbolId="SYM34"/>
-<SymbolReference symbolId="SYM41"/>
+<SymbolReference symbolId="SYM56"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM4" type="type" name="BOOLEAN" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM3" type="variable" name="m" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM17"/>
+<SymbolReference symbolId="SYM9"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="variable" name="b" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM39"/>
+<SymbolReference symbolId="SYM52"/>
+<SymbolReference symbolId="SYM28"/>
+<SymbolReference symbolId="SYM29"/>
+<SymbolReference symbolId="SYM49"/>
+<SymbolReference symbolId="SYM33"/>
+<SymbolReference symbolId="SYM53"/>
+<SymbolReference symbolId="SYM34"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM5" type="type" name="BOOLEAN" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM6"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM5" type="variable" name="true" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM6" type="variable" name="true" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
-<SymbolReference symbolId="SYM22"/>
 <SymbolReference symbolId="SYM30"/>
+<SymbolReference symbolId="SYM50"/>
+<SymbolReference symbolId="SYM19"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="type" name="senal" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM6"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM8" type="variable" name="false" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM31"/>
+<SymbolReference symbolId="SYM51"/>
 <SymbolReference symbolId="SYM18"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM6" type="type" name="senal" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM6"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM7" type="variable" name="dispositivo" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM9" type="variable" name="segnal" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM12"/>
 <SymbolReference symbolId="SYM10"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM8" type="type" name="t" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM6"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM9" type="variable" name="false" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM31"/>
-<SymbolReference symbolId="SYM23"/>
-<SymbolReference symbolId="SYM19"/>
 </UsingSymbols>
 </Item>
 </DictionaryObjects>

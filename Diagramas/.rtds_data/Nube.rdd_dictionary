@@ -50,7 +50,6 @@
 <SignalReference id="SIG7"/>
 <SignalReference id="SIG9"/>
 <SignalReference id="SIG10"/>
-<SignalReference id="SIG5"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG8"/>
@@ -99,7 +98,6 @@
 <SignalReference id="SIG6"/>
 <SignalReference id="SIG7"/>
 <SignalReference id="SIG3"/>
-<SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>
@@ -116,7 +114,6 @@
 <SignalReference id="SIG6"/>
 <SignalReference id="SIG7"/>
 <SignalReference id="SIG3"/>
-<SignalReference id="SIG5"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
@@ -137,7 +134,6 @@
 <SignalReference id="SIG7"/>
 <SignalReference id="SIG9"/>
 <SignalReference id="SIG10"/>
-<SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW3" insideDiagram="FALSE">

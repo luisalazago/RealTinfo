@@ -17,24 +17,6 @@
 </Symbol>
 </Symbol>
 
-<Link linkId="LINK23" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>cControSer</Text>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="-0.00174520069808" endType="midarrow">
-<Text id="1">[]</Text>
-<Text id="2">cControSer
-</Text>
-</Connector>
-<Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[warning, sendInfo]
-</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="v" length="-257"/>
-<LinkSegment orientation="h" length="-297"/>
-<LinkSegment orientation="v" length="-242"/>
-
-</Link>
-
 <Link linkId="LINK24" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cAdministrativo</Text>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="0.497382198953" endType="midarrow">
@@ -56,7 +38,7 @@
 <Link linkId="LINK22" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="e" position="-0.00516129032258" endType="midarrow">
-<Text id="1">[sendInfo, lt, td, isInfo, tiempo]
+<Text id="1">[sendInfo, lt, td, isInfo]
 </Text>
 <Text id="2">cSerNube
 </Text>
@@ -69,6 +51,24 @@
 <LinkSegment orientation="h" length="-442"/>
 <LinkSegment orientation="v" length="-110"/>
 <LinkSegment orientation="h" length="-429"/>
+
+</Link>
+
+<Link linkId="LINK23" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cControSer</Text>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="-0.00174520069808" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2">cControSer
+</Text>
+</Connector>
+<Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[warning, sendInfo]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="-257"/>
+<LinkSegment orientation="h" length="-297"/>
+<LinkSegment orientation="v" length="-242"/>
 
 </Link>
 </DiagramPartition>

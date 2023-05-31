@@ -1,0 +1,145 @@
+%%***( Main )**********************************************************************
+
+\documentclass{report}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{afterpage}
+\usepackage{fix-cm}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+\usepackage[pages=some]{background}
+\usepackage{fontspec}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{longtable}
+\setromanfont{BaxterSans}[
+    Path=./Baxter/,
+    Extension = .otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-RegularItalic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\definecolor{UoDBlue}{RGB}{67, 101, 226}
+\definecolor{UoDDarkBlue}{RGB}{61, 88, 151}
+\definecolor{UoDLightBlue}{RGB}{209,226,242}
+
+\chapterfont{\color{UoDBlue}}
+\sectionfont{\color{UoDBlue}}
+\subsectionfont{\color{UoDBlue}}
+
+\backgroundsetup{firstpage = true, placement = bottom, scale = 1, angle = 0, opacity = 0.05,
+contents = {\includegraphics[width = \paperwidth, height = \paperheight, keepaspectratio]
+{images/iot-and-cc.png}}}
+
+\usepackage{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+
+\usepackage{listings}
+\lstset{ frame=Ltb,
+framerule=0pt,
+aboveskip=0.5cm,
+framextopmargin=3pt,
+framexbottommargin=3pt,
+framexleftmargin=0.4cm,
+framesep=0pt,
+rulesep=.4pt,
+backgroundcolor=\color{gray97},
+rulesepcolor=\color{black},
+%
+stringstyle=\ttfamily,
+showstringspaces = false,
+basicstyle=\small\ttfamily,
+commentstyle=\color{gray45},
+keywordstyle=\bfseries,
+%
+numbers=left,
+numbersep=15pt,
+numberstyle=\tiny,
+numberfirstline = false,
+breaklines=true,
+}
+
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+{\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\lstdefinestyle{consola}
+{basicstyle=\scriptsize\bf\ttfamily,
+backgroundcolor=\color{gray75},
+}
+
+\lstdefinestyle{C}
+{language=C,
+}
+
+\begin{document}
+
+%%==================================================================================
+\input{title}
+
+%%==================================================================================
+\tableofcontents
+\newpage
+
+\pagestyle{fancy}
+\fancyhead{}\fancyfoot{}
+\fancyhead[L]{ICCN | Equipo \#5 | Memoria de Diseño}
+\fancyfoot[C]{\thepage}
+
+%%==================================================================================
+\chapter{Resumen del proyecto}
+\input{sections/1-summary}
+\newpage
+
+%%==================================================================================
+\chapter{Contexto y concepción de la solución propuesta}
+\input{sections/2-concept}
+\newpage
+
+%%==================================================================================
+\chapter{Diseño del sistema base}
+\input{sections/3-base}
+\newpage
+
+%%==================================================================================
+\chapter{Escalamiento del sistema}
+\input{sections/4-scaledup}
+\newpage
+%%==================================================================================
+\begin{comment}
+    \chapter{Prototipo final}
+    \input{sections/5-final}
+    \newpage
+\end{comment}
+%%==================================================================================
+    \chapter{Reflexión del proceso}
+    \input{sections/6-conclusions}
+    \newpage
+%%==================================================================================
+    \chapter{Costos y presupuesto asociados al proyecto}
+    \input{sections/7-budget}
+    \newpage
+%%==================================================================================
+\chapter{Referencias}
+\input{sections/8-refs}
+
+\begin{comment}
+    \chapter*{Anexos}
+    \input{sections/annexes}
+\end{comment}
+
+
+
+\end{document}

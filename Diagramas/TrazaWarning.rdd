@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="LIFELINEID_1 LIFELINEID_2 LIFELINEID_3 LIFELINEID_4 LIFELINEID_5 LIFELINEID_6"/>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="PROCESS_START" color="-" text="Proceso_Administrador
+(1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="PROCESS_START" color="-" text="Proceso_Controlador
+(2)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="PROCESS_START" color="-" text="Proceso_GestionBD
+(3)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="PROCESS_START" color="-" text="Proceso_BD
+(4)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="PROCESS_START" color="-" text="ProcesoAcciones
+(5)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="PROCESS_START" color="-" text="RTDS_Env
+(-1)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_administrador.rdd*SYM8" identifier="COND1" background="-" text="Comunicaciones_Admin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_Admin" identifier="COND1" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_administrador.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_controlador.rdd*SYM8" identifier="COND2" background="-" text="Comunicaciones_Controlador"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_Controlador" identifier="COND2" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_controlador.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_gestionbd.rdd*SYM2" identifier="COND3" background="-" text="Comunicaciones_BD"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_BD" identifier="COND3" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_gestionbd.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_bd.rdd*SYM52" identifier="COND4" background="-" text="Comunicaciones_SerBDNube"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_SerBDNube" identifier="COND4" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_bd.rdd*SYM52"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\procesoacciones.rdd*SYM58" identifier="COND5" background="-" text="Comunicaciones_Acciones"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_Acciones" identifier="COND5" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\procesoacciones.rdd*SYM58"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_SEND" color="-" text="warning(|{param1|=camera|,param2|=batery|})" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_controlador.rdd*SYM10" identifier="MSG1" text="warning(|{param1|=camera|,param2|=batery|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_controlador.rdd*SYM12" identifier="MSG2" text="warning(|{param1|=camera|,param2|=batery|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_controlador.rdd*SYM16" identifier="COND6" background="-" text="Comunicaciones_Controlador"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_Controlador" identifier="COND6" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_controlador.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\procesoacciones.rdd*SYM62" identifier="MSG2" text="warning(|{param1|=camera|,param2|=batery|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\procesoacciones.rdd*SYM81" identifier="MSG3" text="warning(|{param1|=camera|,param2|=batery|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\procesoacciones.rdd*SYM94" identifier="COND7" background="-" text="Comunicaciones_Acciones"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_Acciones" identifier="COND7" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\procesoacciones.rdd*SYM94"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_administrador.rdd*SYM9" identifier="MSG3" text="warning(|{param1|=camera|,param2|=batery|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_administrador.rdd*SYM11" identifier="MSG4" text="warning(|{param1|=camera|,param2|=batery|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_RECEIVE" color="-" text="warning(|{param1|=camera|,param2|=batery|})" identifier="MSG4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_administrador.rdd*SYM15" identifier="COND8" background="-" text="Comunicaciones_Admin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Comunicaciones_Admin" identifier="COND8" model_id="PragmaDevStudio:symbol*c:\users\luisa\onedrive\escritorio\universidad\noveno semestre\internet de las cosas y computación en la nube\proyecto\diagramas\proceso_administrador.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+</MscDiagram>
