@@ -33,4 +33,26 @@
 <SymbolReference symbolId="_LIFELINE_3"/>
 </UsingSymbols>
 </Item>
+<Item id="ITEM6" type="process" name="CDispo1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="system"/>
+<AlternateType type="block"/>
+<UsingSymbols>
+<SymbolReference symbolId="_LIFELINE_8"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="process" name="CDispo2" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="system"/>
+<AlternateType type="block"/>
+<UsingSymbols>
+<SymbolReference symbolId="_LIFELINE_10"/>
+<SymbolReference symbolId="_LIFELINE_14"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM8" type="process" name="CDispo3" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="system"/>
+<AlternateType type="block"/>
+<UsingSymbols>
+<SymbolReference symbolId="_LIFELINE_17"/>
+</UsingSymbols>
+</Item>
 </DictionaryObjects>
