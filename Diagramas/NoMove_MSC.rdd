@@ -3,7 +3,7 @@
 <!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
 
 <MscDiagram message_params_visibility="full">
-<LifelineOrdering identifiers="_LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _LIFELINE_5 _LIFELINE_6"/>
+<LifelineOrdering identifiers="_LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _LIFELINE_7 _LIFELINE_5 _LIFELINE_6"/>
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_0" event_type="PROCESS_START" color="-" text="Cámara
 " text_size="50 -" background="-"/>
@@ -21,47 +21,48 @@ Movimiento
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;no move&quot;
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;no move from n&quot;
 " identifier="_LINK_358"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="moveState(0)
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="move(0, n)
 " identifier="_LINK_363"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnMic(0)
+<MscEvent lifeline_ids="_LIFELINE_7 _LIFELINE_3" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_749"/>
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="PROCESS_START" color="-" text="CDispoN
+" text_size="57 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_7" event_type="OPERATION_CALL" color="#000000" text="turnMic(0, n)
 " identifier="_LINK_368"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="turnCamera(0)
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_7" event_type="OPERATION_CALL" color="#000000" text="turnCamera(0, n)
 " identifier="_LINK_371"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera off&quot;
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera n off&quot;
 " identifier="_LINK_375"/>
-<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera off&quot;
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera n off&quot;
 " identifier="_LINK_375"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic off&quot;
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic n off&quot;
 " identifier="_LINK_379"/>
-<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic off&quot;
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic n off&quot;
 " identifier="_LINK_379"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_6 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="sendInfo(video, audio)
-" identifier="_LINK_389"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_5 _LIFELINE_6" event_type="OPERATION_CALL" color="#000000" text="saveInfo(video, audio)
-" identifier="_LINK_513"/>
+<MscEvent lifeline_ids="_LIFELINE_6 _LIFELINE_7" event_type="OPERATION_CALL" color="#000000" text="sendInfo(video, audio, n)
+" identifier="_LINK_753"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>

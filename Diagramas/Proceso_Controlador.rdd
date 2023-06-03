@@ -7,132 +7,159 @@
 <SdlFSMSymbol identifier="SYM6" type="sdlText" text="DCL
   b INTEGER,
   m BOOLEAN,
+  n INTEGER,
   informacion info,
   dispositivo device,
   flag INTEGER := 0,
   segnal senal;
 
-TIMER movimiento;" outline_color="-" background_color="-" center_coordinates="1606 163" dimensions="166 146" attached_symbol_id=""/>
-<NonStateTransition top_left_coordinates="93 35">
-<SdlFSMSymbol identifier="SYM7" type="sdlStart" outline_color="-" background_color="-" center_coordinates="196 50" dimensions="60 30" attached_symbol_id=""/>
+TIMER movimiento;" outline_color="-" background_color="-" center_coordinates="1524 161" dimensions="166 160" attached_symbol_id=""/>
+<NonStateTransition top_left_coordinates="93 36">
+<SdlFSMSymbol identifier="SYM7" type="sdlStart" outline_color="-" background_color="-" center_coordinates="222 51" dimensions="60 30" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM8" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="196 97" dimensions="202 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM8" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="222 98" dimensions="202 40" attached_symbol_id=""/>
 </Transition>
 </NonStateTransition>
-<StateTransitionBlock top_left_coordinates="838 71">
-<SdlFSMSymbol identifier="SYM27" type="sdlState" text="Prender" outline_color="-" background_color="-" center_coordinates="956 91" dimensions="68 40" attached_symbol_id=""/>
+<StateTransitionBlock top_left_coordinates="710 79">
+<SdlFSMSymbol identifier="SYM27" type="sdlState" text="Prender" outline_color="-" background_color="-" center_coordinates="839 99" dimensions="68 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM28" type="sdlInputSig" text="busy(b)" outline_color="-" background_color="-" center_coordinates="956 143" dimensions="68 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM28" type="sdlInputSig" text="busy(b, n)" outline_color="-" background_color="-" center_coordinates="839 151" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
 <DecisionBlock>
-<SdlFSMSymbol identifier="SYM29" type="sdlDecision" text="b = 1" outline_color="-" background_color="-" center_coordinates="956 195" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM29" type="sdlDecision" text="b = 1" outline_color="-" background_color="-" center_coordinates="839 203" dimensions="60 40" attached_symbol_id=""/>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM30" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="956 247" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM30" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="839 255" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM32" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="956 299" dimensions="202 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM32" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="839 307" dimensions="202 40" attached_symbol_id=""/>
 </Transition>
 </DecisionBranch>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM31" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="1097 247" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM31" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="980 255" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 </Transition>
 </DecisionBranch>
 </DecisionBlock>
-<SdlFSMSymbol identifier="SYM33" type="sdlTask" text="b := 1" outline_color="-" background_color="-" center_coordinates="956 363" dimensions="62 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM34" type="sdlSendSig" text="busy(b) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="956 415" dimensions="194 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM35" type="sdlSendSig" text="turnMic(1) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="956 467" dimensions="216 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM36" type="sdlSendSig" text="turnCamera(1) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="956 519" dimensions="236 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM37" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="956 571" dimensions="202 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM33" type="sdlTask" text="b := 1" outline_color="-" background_color="-" center_coordinates="839 371" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM34" type="sdlSendSig" text="busy(b, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="839 423" dimensions="216 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM35" type="sdlSendSig" text="turnMic(1, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="839 475" dimensions="236 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM36" type="sdlSendSig" text="turnCamera(1, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="839 527" dimensions="258 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM37" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="839 579" dimensions="202 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
-<StateTransitionBlock top_left_coordinates="1170 75">
-<SdlFSMSymbol identifier="SYM38" type="sdlState" text="Apagar" outline_color="-" background_color="-" center_coordinates="1288 95" dimensions="62 40" attached_symbol_id=""/>
+<StateTransitionBlock top_left_coordinates="1060 81">
+<SdlFSMSymbol identifier="SYM38" type="sdlState" text="Apagar" outline_color="-" background_color="-" center_coordinates="1189 101" dimensions="62 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM39" type="sdlInputSig" text="busy(b)" outline_color="-" background_color="-" center_coordinates="1288 147" dimensions="68 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM39" type="sdlInputSig" text="busy(b, n)" outline_color="-" background_color="-" center_coordinates="1189 153" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
 <DecisionBlock>
-<SdlFSMSymbol identifier="SYM49" type="sdlDecision" text="b = 1" outline_color="-" background_color="-" center_coordinates="1288 199" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM49" type="sdlDecision" text="b = 1" outline_color="-" background_color="-" center_coordinates="1189 205" dimensions="60 40" attached_symbol_id=""/>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM50" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="1288 251" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM50" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="1189 257" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM52" type="sdlTask" text="b := 0" outline_color="-" background_color="-" center_coordinates="1288 303" dimensions="62 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM53" type="sdlSendSig" text="busy(b) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="1288 355" dimensions="194 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM54" type="sdlSendSig" text="turnMic(0) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="1288 407" dimensions="216 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM55" type="sdlSendSig" text="turnCamera(0) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="1288 459" dimensions="236 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM56" type="sdlState" text="RecibirInfo" outline_color="-" background_color="-" center_coordinates="1288 511" dimensions="96 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM52" type="sdlTask" text="b := 0" outline_color="-" background_color="-" center_coordinates="1189 309" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM53" type="sdlSendSig" text="busy(b, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="1189 361" dimensions="216 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM54" type="sdlSendSig" text="turnMic(0, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="1189 413" dimensions="236 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM55" type="sdlSendSig" text="turnCamera(0, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="1189 465" dimensions="258 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM56" type="sdlState" text="RecibirInfo" outline_color="-" background_color="-" center_coordinates="1189 517" dimensions="96 40" attached_symbol_id=""/>
 </Transition>
 </DecisionBranch>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM51" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="1446 251" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM51" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="1358 257" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 </Transition>
 </DecisionBranch>
 </DecisionBlock>
-<SdlFSMSymbol identifier="SYM44" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="1288 575" dimensions="202 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM44" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="1189 581" dimensions="202 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
-<StateTransitionBlock top_left_coordinates="841 633">
-<SdlFSMSymbol identifier="SYM45" type="sdlState" text="RecibirInfo" outline_color="-" background_color="-" center_coordinates="980 653" dimensions="96 40" attached_symbol_id=""/>
+<StateTransitionBlock top_left_coordinates="710 636">
+<SdlFSMSymbol identifier="SYM45" type="sdlState" text="RecibirInfo" outline_color="-" background_color="-" center_coordinates="856 656" dimensions="96 40" attached_symbol_id=""/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM46" type="sdlInputSig" text="sendInfo(informacion)" outline_color="-" background_color="-" center_coordinates="980 705" dimensions="166 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM46" type="sdlInputSig" text="sendInfo(informacion, n)" outline_color="-" background_color="-" center_coordinates="856 708" dimensions="188 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM47" type="sdlSendSig" text="sendInfo(informacion) VIA cControSer1" outline_color="-" background_color="-" center_coordinates="980 757" dimensions="278 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM48" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="980 809" dimensions="202 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM47" type="sdlSendSig" text="sendInfo(informacion, n) VIA cControSer" outline_color="-" background_color="-" center_coordinates="856 760" dimensions="292 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM48" type="sdlState" text="Comunicaciones_Controlador" outline_color="-" background_color="-" center_coordinates="856 812" dimensions="202 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>
 <StateTransitionBlock top_left_coordinates="349 334">
 <SdlFSMSymbolReference identifier="SYM8"/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM9" type="sdlInputSig" text="move(m)" outline_color="-" background_color="-" center_coordinates="196 149" dimensions="68 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM9" type="sdlInputSig" text="move(m, n)" outline_color="-" background_color="-" center_coordinates="222 150" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
 <DecisionBlock>
-<SdlFSMSymbol identifier="SYM17" type="sdlDecision" text="m" outline_color="-" background_color="-" center_coordinates="196 201" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM17" type="sdlDecision" text="m" outline_color="-" background_color="-" center_coordinates="222 202" dimensions="60 40" attached_symbol_id=""/>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM18" type="sdlAnswer" text="= false" outline_color="-" background_color="-" center_coordinates="196 253" dimensions="68 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM18" type="sdlAnswer" text="= false" outline_color="-" background_color="-" center_coordinates="222 254" dimensions="68 40" attached_symbol_id=""/>
 <Transition>
 <DecisionBlock>
-<SdlFSMSymbol identifier="SYM86" type="sdlDecision" text="flag = 1" outline_color="-" background_color="-" center_coordinates="196 305" dimensions="76 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM86" type="sdlDecision" text="flag = 1" outline_color="-" background_color="-" center_coordinates="222 306" dimensions="76 40" attached_symbol_id=""/>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM87" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="196 357" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM87" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="222 358" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM89" type="sdlState" text="Apagar" outline_color="-" background_color="-" center_coordinates="196 409" dimensions="62 40" attached_symbol_id=""/>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM94" type="sdlDecision" text="b = 1" outline_color="-" background_color="-" center_coordinates="222 410" dimensions="60 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM95" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="222 462" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM102" type="sdlTask" text="b := 0" outline_color="-" background_color="-" center_coordinates="222 514" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM103" type="sdlSendSig" text="turnMic(0, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="222 566" dimensions="236 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM104" type="sdlSendSig" text="turnCamera(0, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="222 618" dimensions="258 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM105" type="sdlState" text="RecibirInfo" outline_color="-" background_color="-" center_coordinates="222 670" dimensions="96 40" attached_symbol_id=""/>
 </Transition>
 </DecisionBranch>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM88" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="267 357" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM96" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="391 462" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 </Transition>
 </DecisionBranch>
 </DecisionBlock>
-<SdlFSMSymbol identifier="SYM81" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="196 473" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </DecisionBranch>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM19" type="sdlAnswer" text="= true" outline_color="-" background_color="-" center_coordinates="338 253" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM88" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="461 358" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 </Transition>
 </DecisionBranch>
 </DecisionBlock>
-<SdlFSMSymbol identifier="SYM93" type="sdlTask" text="flag := 0;" outline_color="-" background_color="-" center_coordinates="196 537" dimensions="92 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM85" type="sdlInitTimer" text="SET(NOW + 30, movimiento)" outline_color="-" background_color="-" center_coordinates="196 589" dimensions="206 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM15" type="sdlState" text="Prender" outline_color="-" background_color="-" center_coordinates="196 641" dimensions="68 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM81" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="222 746" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM19" type="sdlAnswer" text="= true" outline_color="-" background_color="-" center_coordinates="532 254" dimensions="62 40" attached_symbol_id=""/>
+<Transition>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM93" type="sdlTask" text="flag := 0;" outline_color="-" background_color="-" center_coordinates="222 810" dimensions="90 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM85" type="sdlInitTimer" text="SET(NOW + 30, movimiento)" outline_color="-" background_color="-" center_coordinates="222 862" dimensions="206 40" attached_symbol_id=""/>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM106" type="sdlDecision" text="b = 1" outline_color="-" background_color="-" center_coordinates="222 914" dimensions="60 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM107" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="222 966" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM109" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="222 1018" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM108" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="292 966" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM110" type="sdlTask" text="b := 1" outline_color="-" background_color="-" center_coordinates="222 1082" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM111" type="sdlSendSig" text="turnMic(1, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="222 1134" dimensions="236 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM112" type="sdlSendSig" text="turnCamera(1, n) VIA cDispoContro1" outline_color="-" background_color="-" center_coordinates="222 1186" dimensions="258 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM113" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="222 1238" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM10" type="sdlInputSig" text="warning(dispositivo, segnal)" outline_color="-" background_color="-" center_coordinates="543 149" dimensions="216 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM82" type="sdlInputSig" text="movimiento" outline_color="-" background_color="-" center_coordinates="618 150" dimensions="90 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM12" type="sdlSendSig" text="warning(dispositivo, segnal) VIA cControSer1" outline_color="-" background_color="-" center_coordinates="543 201" dimensions="328 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM16" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="543 253" dimensions="60 40" attached_symbol_id=""/>
-</Transition>
-</NormalStateTransition>
-<NormalStateTransition>
-<SdlFSMSymbol identifier="SYM82" type="sdlInputSig" text="movimiento" outline_color="-" background_color="-" center_coordinates="763 149" dimensions="90 40" attached_symbol_id=""/>
-<Transition>
-<SdlFSMSymbol identifier="SYM91" type="sdlTask" text="flag := 1;" outline_color="-" background_color="-" center_coordinates="763 201" dimensions="92 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM83" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="763 253" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM91" type="sdlTask" text="flag := 1;" outline_color="-" background_color="-" center_coordinates="618 202" dimensions="90 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM83" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="618 254" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>

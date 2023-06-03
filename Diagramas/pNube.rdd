@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
+<SdlFSMPartition name="" needs_cleanup="FALSE">
+<SdlFSMSymbol identifier="SYM19" type="sdlText" text="DCL
+  a INTEGER,
+  n INTEGER,
+  respuesta1 ans;" outline_color="-" background_color="-" center_coordinates="133 499" dimensions="138 76" attached_symbol_id=""/>
+<NonStateTransition top_left_coordinates="41 58">
+<SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="121 73" dimensions="60 30" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM2" type="sdlState" text="Comunicaciones_pNube" outline_color="-" background_color="-" center_coordinates="121 120" dimensions="160 40" attached_symbol_id=""/>
+</Transition>
+</NonStateTransition>
+<StateTransitionBlock top_left_coordinates="332 100">
+<SdlFSMSymbol identifier="SYM9" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="464 120" dimensions="104 40" attached_symbol_id=""/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM10" type="sdlInputSig" text="info1(n)" outline_color="-" background_color="-" center_coordinates="464 172" dimensions="76 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM11" type="sdlTask" text="respuesta1 := respuesta;" outline_color="-" background_color="-" center_coordinates="464 224" dimensions="190 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM12" type="sdlSendSig" text="ansRequest(respuesta1, n) TO SENDER" outline_color="-" background_color="-" center_coordinates="464 276" dimensions="264 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM13" type="sdlState" text="Comunicaciones_pNube" outline_color="-" background_color="-" center_coordinates="464 328" dimensions="160 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<StateTransitionBlock top_left_coordinates="670 100">
+<SdlFSMSymbol identifier="SYM14" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="802 120" dimensions="124 40" attached_symbol_id=""/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM15" type="sdlInputSig" text="errorFound(n)" outline_color="-" background_color="-" center_coordinates="802 172" dimensions="110 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM16" type="sdlTask" text="respuesta1 := errores;" outline_color="-" background_color="-" center_coordinates="802 224" dimensions="174 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="ansRequest(respuesta1, n) TO SENDER" outline_color="-" background_color="-" center_coordinates="802 276" dimensions="264 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM18" type="sdlState" text="Comunicaciones_pNube" outline_color="-" background_color="-" center_coordinates="802 328" dimensions="160 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<StateTransitionBlock top_left_coordinates="26 -183">
+<SdlFSMSymbolReference identifier="SYM2"/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM3" type="sdlInputSig" text="answer(a, n)" outline_color="-" background_color="-" center_coordinates="121 172" dimensions="104 40" attached_symbol_id=""/>
+<Transition>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM4" type="sdlDecision" text="a = 1" outline_color="-" background_color="-" center_coordinates="121 224" dimensions="60 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM5" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="121 276" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM7" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="121 328" dimensions="104 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM6" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="213 276" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM8" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="121 392" dimensions="124 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.0" bottomMargin="1.0" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+</SdlFSMPartition>
+</SdlFSMDiagram>

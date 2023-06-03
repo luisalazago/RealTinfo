@@ -33,7 +33,15 @@
 <SymbolReference symbolId="_LIFELINE_3"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM6" type="process" name="Base de Datos" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM6" type="process" name="CDispoN" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="system"/>
+<AlternateType type="block"/>
+<UsingSymbols>
+<SymbolReference symbolId="_LIFELINE_7"/>
+<SymbolReference symbolId="_LIFELINE_8"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="process" name="Base de Datos" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <AlternateType type="system"/>
 <AlternateType type="block"/>
 <UsingSymbols>
@@ -41,7 +49,7 @@
 <SymbolReference symbolId="_LIFELINE_4"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM7" type="process" name="Servidor" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM8" type="process" name="Servidor" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <AlternateType type="system"/>
 <AlternateType type="block"/>
 <UsingSymbols>

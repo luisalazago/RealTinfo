@@ -3,7 +3,7 @@
 <!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
 
 <MscDiagram message_params_visibility="full">
-<LifelineOrdering identifiers="_SYMBOL_0:left _LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _LIFELINE_4 _SYMBOL_0:right"/>
+<LifelineOrdering identifiers="_SYMBOL_0:left _LIFELINE_1 _LIFELINE_2 _LIFELINE_7 _LIFELINE_3 _LIFELINE_4 _SYMBOL_0:right"/>
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_1" event_type="PROCESS_START" color="-" text="Administrador
 " text_size="99 -" background="-"/>
@@ -17,40 +17,46 @@ Cómputo
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_4" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;User Request&quot;
+<MscEvent lifeline_ids="_LIFELINE_4" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;User n Request&quot;
 " identifier="_LINK_414"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_4" event_type="OPERATION_CALL" color="#000000" text="requestInfo(request)
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_4" event_type="OPERATION_CALL" color="#000000" text="requestInfo(request, n)
 " identifier="_LINK_418"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="isInfo(request)
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="PROCESS_START" color="-" text="ServidorN
+" text_size="71 -" background="-"/>
+<MscEvent lifeline_ids="_LIFELINE_7 _LIFELINE_3" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_804"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="_LIFELINE_2 _LIFELINE_7" event_type="OPERATION_CALL" color="#000000" text="isInfo(request, n)
 " identifier="_LINK_422"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_2 _LIFELINE_4 _LIFELINE_3" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_0"/>
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _LIFELINE_4 _LIFELINE_7" event_type="INLINE_EXPRESSION_START" color="-" text_size="22 14" type="alt" identifier="_SYMBOL_0"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="True
 " identifier="_LINK_617"/>
-<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="True
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="True
 " identifier="_LINK_617"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="info
 " identifier="_LINK_621"/>
-<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="info
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="info
 " identifier="_LINK_621"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="ansRequest(info)
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_7" event_type="OPERATION_CALL" color="#000000" text="ansRequest(info, n)
 " identifier="_LINK_436"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
@@ -61,31 +67,31 @@ Cómputo
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="False
 " identifier="_LINK_625"/>
-<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="False
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="False
 " identifier="_LINK_625"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_SEND" color="#000000" text="error
 " identifier="_LINK_630"/>
-<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_RECEIVE" color="#000000" text="error
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_RECEIVE" color="#000000" text="error
 " identifier="_LINK_630"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_3" event_type="MESSAGE_SEND" color="#000000" text="&quot;Error found in DB&quot;
+<MscEvent lifeline_ids="_LIFELINE_7" event_type="MESSAGE_SEND" color="#000000" text="&quot;Error found in DB&quot;
 " identifier="_LINK_509"/>
 <MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Error found in DB&quot;
 " identifier="_LINK_509"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="errorFound(error)
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_7" event_type="OPERATION_CALL" color="#000000" text="errorFound(error, n)
 " identifier="_LINK_457"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_3" event_type="OPERATION_CALL" color="#000000" text="ansRequest(error)
+<MscEvent lifeline_ids="_LIFELINE_4 _LIFELINE_7" event_type="OPERATION_CALL" color="#000000" text="ansRequest(error, n)
 " identifier="_LINK_461"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>

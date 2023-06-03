@@ -9,104 +9,107 @@
   peticion request,
   respuesta1 ans,
   a INTEGER,
-  flag INTEGER := 0;" outline_color="-" background_color="-" center_coordinates="1253 118" dimensions="160 104" attached_symbol_id=""/>
-<StateTransitionBlock top_left_coordinates="404 653">
-<SdlFSMSymbol identifier="SYM8" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="466 673" dimensions="82 40" attached_symbol_id=""/>
-<NormalStateTransition>
-<SdlFSMSymbol identifier="SYM9" type="sdlInputSig" text="answer(a)" outline_color="-" background_color="-" center_coordinates="466 725" dimensions="82 40" attached_symbol_id=""/>
-<Transition>
-<DecisionBlock>
-<SdlFSMSymbol identifier="SYM78" type="sdlDecision" text="a = 1" outline_color="-" background_color="-" center_coordinates="466 777" dimensions="60 40" attached_symbol_id=""/>
-<DecisionBranch>
-<SdlFSMSymbol identifier="SYM79" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="466 829" dimensions="60 40" attached_symbol_id=""/>
-<Transition>
-<SdlFSMSymbol identifier="SYM81" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="466 881" dimensions="104 40" attached_symbol_id=""/>
-</Transition>
-</DecisionBranch>
-<DecisionBranch>
-<SdlFSMSymbol identifier="SYM80" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="558 829" dimensions="60 40" attached_symbol_id=""/>
-<Transition>
-</Transition>
-</DecisionBranch>
-</DecisionBlock>
-<SdlFSMSymbol identifier="SYM14" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="466 945" dimensions="124 40" attached_symbol_id=""/>
-</Transition>
-</NormalStateTransition>
-</StateTransitionBlock>
-<StateTransitionBlock top_left_coordinates="18 654">
-<SdlFSMSymbol identifier="SYM15" type="sdlState" text="DevolverInfo" outline_color="-" background_color="-" center_coordinates="154 674" dimensions="104 40" attached_symbol_id=""/>
-<NormalStateTransition>
-<SdlFSMSymbol identifier="SYM16" type="sdlInputSig" text="info1" outline_color="-" background_color="-" center_coordinates="154 726" dimensions="60 40" attached_symbol_id=""/>
-<Transition>
-<SdlFSMSymbol identifier="SYM22" type="sdlTask" text="respuesta1 := respuesta;" outline_color="-" background_color="-" center_coordinates="154 778" dimensions="188 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="ansRequest(respuesta1) VIA cServUser" outline_color="-" background_color="-" center_coordinates="154 830" dimensions="272 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM76" type="sdlState" text="Comunicaciones_SerBDNube" outline_color="-" background_color="-" center_coordinates="154 882" dimensions="188 40" attached_symbol_id=""/>
-</Transition>
-</NormalStateTransition>
-</StateTransitionBlock>
-<StateTransitionBlock top_left_coordinates="707 654">
-<SdlFSMSymbol identifier="SYM19" type="sdlState" text="DevolverErrores" outline_color="-" background_color="-" center_coordinates="843 674" dimensions="124 40" attached_symbol_id=""/>
-<NormalStateTransition>
-<SdlFSMSymbol identifier="SYM20" type="sdlInputSig" text="errorFound" outline_color="-" background_color="-" center_coordinates="843 726" dimensions="90 40" attached_symbol_id=""/>
-<Transition>
-<SdlFSMSymbol identifier="SYM23" type="sdlTask" text="respuesta1 := errores;" outline_color="-" background_color="-" center_coordinates="843 778" dimensions="174 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM21" type="sdlSendSig" text="ansRequest(respuesta1) VIA cServUser" outline_color="-" background_color="-" center_coordinates="843 830" dimensions="272 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM25" type="sdlSendSig" text="errorFound VIA cSerNube" outline_color="-" background_color="-" center_coordinates="843 882" dimensions="180 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM77" type="sdlState" text="Comunicaciones_SerBDNube" outline_color="-" background_color="-" center_coordinates="843 934" dimensions="188 40" attached_symbol_id=""/>
-</Transition>
-</NormalStateTransition>
-</StateTransitionBlock>
-<StateTransitionBlock top_left_coordinates="1011 653">
-<SdlFSMSymbol identifier="SYM43" type="sdlState" text="RecibirRes" outline_color="-" background_color="-" center_coordinates="1119 673" dimensions="90 40" attached_symbol_id=""/>
-<NormalStateTransition>
-<SdlFSMSymbol identifier="SYM44" type="sdlInputSig" text="isInfo(peticion)" outline_color="-" background_color="-" center_coordinates="1119 725" dimensions="132 40" attached_symbol_id=""/>
-<Transition>
-<SdlFSMSymbol identifier="SYM45" type="sdlSendSig" text="isInfo(peticion) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="1119 777" dimensions="216 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM46" type="sdlState" text="Respuesta" outline_color="-" background_color="-" center_coordinates="1119 829" dimensions="82 40" attached_symbol_id=""/>
-</Transition>
-</NormalStateTransition>
-</StateTransitionBlock>
+  n INTEGER,
+  flag INTEGER := 0,
+  pIns PID,
+  pArrayC pArray,
+  index INTEGER := 0;" outline_color="-" background_color="-" center_coordinates="124 615" dimensions="166 160" attached_symbol_id=""/>
 <NonStateTransition top_left_coordinates="40 30">
-<SdlFSMSymbol identifier="SYM51" type="sdlStart" outline_color="-" background_color="-" center_coordinates="165 45" dimensions="60 30" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM51" type="sdlStart" outline_color="-" background_color="-" center_coordinates="176 45" dimensions="60 30" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM52" type="sdlState" text="Comunicaciones_SerBDNube" outline_color="-" background_color="-" center_coordinates="165 92" dimensions="188 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM52" type="sdlState" text="Comunicaciones_SerBDNube" outline_color="-" background_color="-" center_coordinates="176 92" dimensions="188 40" attached_symbol_id=""/>
 </Transition>
 </NonStateTransition>
 <StateTransitionBlock top_left_coordinates="91 484">
 <SdlFSMSymbolReference identifier="SYM52"/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM53" type="sdlInputSig" text="sendInfo(informacion)" outline_color="-" background_color="-" center_coordinates="165 144" dimensions="166 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM53" type="sdlInputSig" text="sendInfo(informacion, n)" outline_color="-" background_color="-" center_coordinates="176 144" dimensions="188 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM54" type="sdlSendSig" text="sendInfo(informacion) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="165 196" dimensions="250 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM72" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="165 248" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM54" type="sdlSendSig" text="sendInfo(informacion, n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="176 196" dimensions="272 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM72" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="176 248" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM56" type="sdlInputSig" text="td" outline_color="-" background_color="-" center_coordinates="366 144" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM56" type="sdlInputSig" text="td(n)" outline_color="-" background_color="-" center_coordinates="398 144" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM57" type="sdlSendSig" text="td VIA cServUser" outline_color="-" background_color="-" center_coordinates="366 196" dimensions="132 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM73" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="366 248" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM57" type="sdlSendSig" text="td(n) VIA cServUser" outline_color="-" background_color="-" center_coordinates="398 196" dimensions="152 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM73" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="398 248" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM59" type="sdlInputSig" text="requestInfo(peticion)" outline_color="-" background_color="-" center_coordinates="571 144" dimensions="166 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM59" type="sdlInputSig" text="requestInfo(peticion, n)" outline_color="-" background_color="-" center_coordinates="623 144" dimensions="188 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM60" type="sdlSendSig" text="requestInfo(peticion) VIA cSerNube" outline_color="-" background_color="-" center_coordinates="571 196" dimensions="258 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM61" type="sdlState" text="RecibirRes" outline_color="-" background_color="-" center_coordinates="571 248" dimensions="90 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM60" type="sdlSendSig" text="requestInfo(peticion, n) VIA cSerNube" outline_color="-" background_color="-" center_coordinates="623 196" dimensions="278 40" attached_symbol_id=""/>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM94" type="sdlDecision" text="n &gt; index" outline_color="-" background_color="-" center_coordinates="623 248" dimensions="82 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM95" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="623 300" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM97" type="sdlPrcsCreation" text="pNube" outline_color="-" background_color="-" center_coordinates="623 352" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM98" type="sdlTask" text="index := index + 1,
+pArrayC(index) := OFFSPRING;" outline_color="-" background_color="-" center_coordinates="623 408" dimensions="216 48" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM96" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="771 300" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM101" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="623 476" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM62" type="sdlInputSig" text="lt" outline_color="-" background_color="-" center_coordinates="790 144" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM62" type="sdlInputSig" text="lt(n)" outline_color="-" background_color="-" center_coordinates="901 144" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM63" type="sdlSendSig" text="dropData VIA cProcBD" outline_color="-" background_color="-" center_coordinates="790 196" dimensions="160 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM74" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="790 248" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM63" type="sdlSendSig" text="dropData(n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="901 196" dimensions="180 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM74" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="901 248" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM65" type="sdlInputSig" text="tiempo" outline_color="-" background_color="-" center_coordinates="956 144" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM65" type="sdlInputSig" text="tiempo(n)" outline_color="-" background_color="-" center_coordinates="1088 144" dimensions="82 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM66" type="sdlSendSig" text="tiempo VIA cSerNube" outline_color="-" background_color="-" center_coordinates="956 196" dimensions="152 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM75" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="956 248" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM66" type="sdlSendSig" text="tiempo(n) VIA cSerNube" outline_color="-" background_color="-" center_coordinates="1088 196" dimensions="174 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM75" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="1088 248" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM82" type="sdlInputSig" text="answer(a, n)" outline_color="-" background_color="-" center_coordinates="1265 144" dimensions="104 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM86" type="sdlTask" text="pIns := pArrayC(n)" outline_color="-" background_color="-" center_coordinates="1265 196" dimensions="146 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM84" type="sdlSendSig" text="answer(a, n) TO pIns" outline_color="-" background_color="-" center_coordinates="1265 248" dimensions="160 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM85" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="1265 300" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM88" type="sdlInputSig" text="errorFound(n)" outline_color="-" background_color="-" center_coordinates="1456 144" dimensions="110 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM113" type="sdlTask" text="pIns := pArrayC(n);" outline_color="-" background_color="-" center_coordinates="1456 196" dimensions="154 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM90" type="sdlSendSig" text="errorFound(n) VIA cSerNube" outline_color="-" background_color="-" center_coordinates="1456 248" dimensions="202 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM114" type="sdlSendSig" text="errorFound(n) TO pIns" outline_color="-" background_color="-" center_coordinates="1456 300" dimensions="166 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM91" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="1456 352" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM102" type="sdlInputSig" text="isInfo(peticion, n)" outline_color="-" background_color="-" center_coordinates="1685 144" dimensions="152 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM104" type="sdlSendSig" text="isInfo(peticion, n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="1685 196" dimensions="236 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM105" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="1685 248" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM106" type="sdlInputSig" text="ansRequest(respuesta1, n)" outline_color="-" background_color="-" center_coordinates="1959 144" dimensions="194 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM107" type="sdlSendSig" text="ansRequest(respuesta1, n) VIA cServUser" outline_color="-" background_color="-" center_coordinates="1959 196" dimensions="292 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM108" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="1959 248" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM109" type="sdlInputSig" text="info1(n)" outline_color="-" background_color="-" center_coordinates="2188 144" dimensions="76 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM110" type="sdlTask" text="pIns := pArrayC(n)" outline_color="-" background_color="-" center_coordinates="2188 196" dimensions="146 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM111" type="sdlSendSig" text="info1(n) TO pIns" outline_color="-" background_color="-" center_coordinates="2188 248" dimensions="132 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM112" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="2188 300" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>

@@ -5,51 +5,66 @@
 <DictionaryObjects version="10330" language="none" diagramType="blk">
 <Signal id="SIG1" name="sendInfo">
 </Signal>
-<Signal id="SIG2" name="warning">
+<Signal id="SIG2" name="turnMic">
 </Signal>
-<Signal id="SIG3" name="turnMic">
+<Signal id="SIG3" name="turnCamera">
 </Signal>
-<Signal id="SIG4" name="turnCamera">
+<Signal id="SIG4" name="move">
 </Signal>
-<Signal id="SIG5" name="busy">
-</Signal>
-<Signal id="SIG6" name="move">
+<Signal id="SIG5" name="warning">
 </Signal>
 <Item id="ITEM1" type="block" name="Controlador" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
-<SignalWindow id="SIGWDW4" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK3" isFrom="TRUE"/>
+<SignalWindow id="SIGWDW7" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK26" isFrom="TRUE"/>
 <Connections>
 <Connection name="cDispoContro"/>
 </Connections>
 <SentSignals>
-<SignalReference id="SIG1"/>
-<SignalReference id="SIG2"/>
-<SignalReference id="SIG5"/>
-<SignalReference id="SIG6"/>
-</SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG3"/>
 <SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW8" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK27" isFrom="TRUE"/>
+<Connections>
+<Connection name="cControSer"/>
+</Connections>
+<ReceivedSignals>
 <SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
-<SignalWindow id="SIGWDW3" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK2" isFrom="TRUE"/>
+<SignalWindow id="SIGWDW9" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK33" isFrom="FALSE"/>
 <Connections>
 <Connection name="cControSer"/>
 </Connections>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
-<SignalReference id="SIG2"/>
 </ReceivedSignals>
 </SignalWindow>
-<Channel name="cControSer1" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
-<Channel name="cDispoContro1" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW2"/>
+<SignalWindow id="SIGWDW10" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK35" isFrom="FALSE"/>
+<Connections>
+<Connection name="cDispoContro"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG1"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG3"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="cControSer" fromSignalWindow="SIGWDW1" toSignalWindow="SIGWDW9"/>
+<Channel name="cDispoContro1" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW10"/>
+<Channel name="cProcesoControlador" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW3"/>
+<Channel name="cDispoContro" fromSignalWindow="SIGWDW7" toSignalWindow="SIGWDW4"/>
+<Channel name="cControSer" fromSignalWindow="SIGWDW8" toSignalWindow="SIGWDW5"/>
 </Item>
-<Item id="ITEM2" type="process" name="Proceso_Controlador" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM2" type="process" name="Proceso_Controlador" parentId="ITEM1" scope="none" minInstances="0" maxInstances="NUM_P" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB2"/>
 </DefiningSymbols>
@@ -57,25 +72,53 @@
 <SymbolReference symbolId="SYMB2"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW1" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK2" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK33" isFrom="TRUE"/>
 <SentSignals>
 <SignalReference id="SIG1"/>
-<SignalReference id="SIG2"/>
 </SentSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW2" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK3" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK35" isFrom="TRUE"/>
 <SentSignals>
+<SignalReference id="SIG2"/>
 <SignalReference id="SIG3"/>
-<SignalReference id="SIG4"/>
-<SignalReference id="SIG5"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
-<SignalReference id="SIG2"/>
-<SignalReference id="SIG5"/>
-<SignalReference id="SIG6"/>
 </ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK34" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM3" type="process" name="ProcesoC" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB23"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB23"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW4" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK26" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG5"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW5" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK27" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG5"/>
+</SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW6" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK34" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG4"/>
+</SentSignals>
 </SignalWindow>
 </Item>
 </DictionaryObjects>

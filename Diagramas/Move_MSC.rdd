@@ -3,7 +3,7 @@
 <!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
 
 <MscDiagram message_params_visibility="full">
-<LifelineOrdering identifiers="_LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _LIFELINE_8 _LIFELINE_14 _LIFELINE_17"/>
+<LifelineOrdering identifiers="_LIFELINE_0 _LIFELINE_1 _LIFELINE_2 _LIFELINE_3 _LIFELINE_8"/>
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_0" event_type="PROCESS_START" color="-" text="Cámara
 " text_size="50 -" background="-"/>
@@ -17,123 +17,43 @@ Movimiento
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;move from 1&quot;
+<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;move from n&quot;
 " identifier="_LINK_334"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="move(1, 1)
+<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="move(1, n)
 " identifier="_LINK_337"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
 <MscEvent lifeline_ids="_LIFELINE_8 _LIFELINE_3" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_737"/>
-<MscEvent lifeline_ids="_LIFELINE_8" event_type="PROCESS_START" color="-" text="CDispo1
+<MscEvent lifeline_ids="_LIFELINE_8" event_type="PROCESS_START" color="-" text="CDispoN
 " text_size="57 -" background="-"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;move from 2&quot;
-" identifier="_LINK_649"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_8" event_type="OPERATION_CALL" color="#000000" text="turnMic(1, 1)
+<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_8" event_type="OPERATION_CALL" color="#000000" text="turnMic(1, n)
 " identifier="_LINK_343"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_8" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1, 1)
+<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_8" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1, n)
 " identifier="_LINK_347"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="move(1, 2)
-" identifier="_LINK_654"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_14 _LIFELINE_3" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_741"/>
-<MscEvent lifeline_ids="_LIFELINE_14" event_type="PROCESS_START" color="-" text="CDispo2
-" text_size="57 -" background="-"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_2" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;move from 3&quot;
-" identifier="_LINK_674"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_14" event_type="OPERATION_CALL" color="#000000" text="turnMic(1, 2)
-" identifier="_LINK_658"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera 1 is Recording&quot;
+<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera n is Recording&quot;
 " identifier="_LINK_350"/>
-<MscEvent lifeline_ids="_LIFELINE_8" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera 1 is Recording&quot;
+<MscEvent lifeline_ids="_LIFELINE_8" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera n is Recording&quot;
 " identifier="_LINK_350"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_14" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1, 2)
-" identifier="_LINK_662"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_3 _LIFELINE_2" event_type="OPERATION_CALL" color="#000000" text="move(1, 3)
-" identifier="_LINK_678"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_17 _LIFELINE_3" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_745"/>
-<MscEvent lifeline_ids="_LIFELINE_17" event_type="PROCESS_START" color="-" text="CDispo3
-" text_size="57 -" background="-"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1 _LIFELINE_17" event_type="OPERATION_CALL" color="#000000" text="turnMic(1, 3)
-" identifier="_LINK_686"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic 1 is Recording&quot;
+<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic n is Recording&quot;
 " identifier="_LINK_355"/>
-<MscEvent lifeline_ids="_LIFELINE_8" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic 1 is Recording&quot;
+<MscEvent lifeline_ids="_LIFELINE_8" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic n is Recording&quot;
 " identifier="_LINK_355"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0 _LIFELINE_17" event_type="OPERATION_CALL" color="#000000" text="turnCamera(1, 3)
-" identifier="_LINK_682"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera 2 is Recording&quot;
-" identifier="_LINK_666"/>
-<MscEvent lifeline_ids="_LIFELINE_14" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera 2 is Recording&quot;
-" identifier="_LINK_666"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic 2 is Recording&quot;
-" identifier="_LINK_670"/>
-<MscEvent lifeline_ids="_LIFELINE_14" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic 2 is Recording&quot;
-" identifier="_LINK_670"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_0" event_type="MESSAGE_SEND" color="#000000" text="&quot;Camera 3 is Recording&quot;
-" identifier="_LINK_692"/>
-<MscEvent lifeline_ids="_LIFELINE_17" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Camera 3 is Recording&quot;
-" identifier="_LINK_692"/>
-<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
-</MscEventRow>
-<MscEventRow>
-<MscEvent lifeline_ids="_LIFELINE_1" event_type="MESSAGE_SEND" color="#000000" text="&quot;Mic 3 is Recording&quot;
-" identifier="_LINK_696"/>
-<MscEvent lifeline_ids="_LIFELINE_17" event_type="MESSAGE_RECEIVE" color="#000000" text="&quot;Mic 3 is Recording&quot;
-" identifier="_LINK_696"/>
 <MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
 </MscEventRow>
 <MscEventRow>

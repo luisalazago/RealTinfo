@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
+<SdlFSMPartition name="" needs_cleanup="FALSE">
+<SdlFSMSymbol identifier="SYM8" type="sdlText" text="DCL
+  m BOOLEAN,
+  n INTEGER,
+  b INTEGER,
+  dispositivo device,
+  segnal senal,
+  pIns PID := NULL,
+  index INTEGER := 0,
+  pArrayC pArray;" outline_color="-" background_color="-" center_coordinates="972 183" dimensions="168 148" attached_symbol_id=""/>
+<NonStateTransition top_left_coordinates="88 36">
+<SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="196 51" dimensions="60 30" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM2" type="sdlState" text="Controlador_ProcesoC" outline_color="-" background_color="-" center_coordinates="196 98" dimensions="160 40" attached_symbol_id=""/>
+</Transition>
+</NonStateTransition>
+<StateTransitionBlock top_left_coordinates="85 78">
+<SdlFSMSymbolReference identifier="SYM2"/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM3" type="sdlInputSig" text="move(m, n)" outline_color="-" background_color="-" center_coordinates="196 150" dimensions="90 40" attached_symbol_id=""/>
+<Transition>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM9" type="sdlDecision" text="n &gt; index" outline_color="-" background_color="-" center_coordinates="196 202" dimensions="82 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM10" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="196 254" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM12" type="sdlPrcsCreation" text="Proceso_Controlador" outline_color="-" background_color="-" center_coordinates="196 306" dimensions="152 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM13" type="sdlTask" text="index := index + 1,
+pArrayC(index) := OFFSPRING;" outline_color="-" background_color="-" center_coordinates="196 362" dimensions="216 48" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM16" type="sdlTask" text="pIns := OFFSPRING;" outline_color="-" background_color="-" center_coordinates="196 418" dimensions="146 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM11" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="390 254" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM15" type="sdlTask" text="pIns := pArrayC(n);" outline_color="-" background_color="-" center_coordinates="390 306" dimensions="152 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM14" type="sdlSendSig" text="move(m, n) TO pIns" outline_color="-" background_color="-" center_coordinates="196 482" dimensions="146 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM5" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="196 534" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM6" type="sdlInputSig" text="warning(dispositivo, segnal, n)" outline_color="-" background_color="-" center_coordinates="647 150" dimensions="236 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="warning(dispositivo, segnal, n) VIA cControSer" outline_color="-" background_color="-" center_coordinates="647 202" dimensions="342 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM18" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="647 254" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.0" bottomMargin="1.0" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+</SdlFSMPartition>
+</SdlFSMDiagram>

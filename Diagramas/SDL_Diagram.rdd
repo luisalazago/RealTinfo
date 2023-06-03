@@ -35,14 +35,13 @@
 <Link linkId="LINK209" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cDispoContro</Text>
 <Connector attachedSymbolId="SYMB14" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[busy, move, warning,
+<Text id="1">[move, warning,
 sendInfo]
 </Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="w" position="-0.0694864048338" endType="midarrow">
-<Text id="1">[turnMic, turnCamera,
-busy]
+<Text id="1">[turnMic, turnCamera]
 </Text>
 <Text id="2"></Text>
 </Connector>
@@ -67,7 +66,7 @@ busy]
 
 </Link>
 
-<Link linkId="LINK210" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK214" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cSerAdmin</Text>
 <Connector attachedSymbolId="SYMB15" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
@@ -84,7 +83,7 @@ busy]
 
 </Link>
 
-<Link linkId="LINK190" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK213" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>cMundoSoporte</Text>
 <Connector attachedSymbolId="SYMB16" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
@@ -143,22 +142,24 @@ errorFound, tiempo]
 <Description></Description>
 <Text></Text>
 
-<Symbol symbolId="SYMB28" type="sdlText" xCenter="286" yCenter="121" fixedDimensions="TRUE" width="352" height="132" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB28" type="sdlText" xCenter="286" yCenter="154" fixedDimensions="TRUE" width="528" height="132" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Signals of the system */
-SIGNAL move(boolean), warning(device, senal);
-SIGNAL sendInfo(info);
-SIGNAL requestInfo(request), isInfo(request);
-SIGNAL busy(integer), tiempo;
-SIGNAL ansRequest(ans);
-SIGNAL errorFound;
-SIGNAL turnCamera(boolean), turnMic(boolean);
-</Text>
+SIGNAL move(boolean, integer), warning(device, senal, integer);
+SIGNAL sendInfo(info, integer);
+SIGNAL requestInfo(request, integer), isInfo(request, integer);
+SIGNAL tiempo(integer);
+SIGNAL ansRequest(ans, integer);
+SIGNAL errorFound(integer);
+SIGNAL turnCamera(boolean, integer), turnMic(boolean, integer);</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB29" type="sdlText" xCenter="297" yCenter="429" fixedDimensions="FALSE" width="330" height="396" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="748" yCenter="341" fixedDimensions="FALSE" width="330" height="550" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Definition of the types */
+
+SYNONYM NUM_P INTEGER = 10;
+
 NEWTYPE info
   LITERALS video, audio;
 ENDNEWTYPE;
@@ -182,7 +183,16 @@ ENDNEWTYPE;
 SYNTYPE t = INTEGER
   DEFAULT 0
   CONSTANTS 0:90
-ENDSYNTYPE;</Text>
+ENDSYNTYPE;
+
+SYNTYPE indexP = INTEGER
+  DEFAULT 1;
+  CONSTANTS 1..NUM_P
+ENDSYNTYPE;
+
+NEWTYPE pArray
+  ARRAY(indexP, PID);
+ENDNEWTYPE;</Text>
 </Symbol>
 </Symbol>
 </DiagramPartition>

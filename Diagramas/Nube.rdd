@@ -21,11 +21,17 @@
 <Text>Base_de_Datos</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB4" type="sdlText" xCenter="198" yCenter="132" fixedDimensions="FALSE" width="242" height="88" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB4" type="sdlText" xCenter="264" yCenter="132" fixedDimensions="FALSE" width="374" height="88" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Signals of the system*/
-SIGNAL answer(integer), info1;
-SIGNAL dropData;</Text>
+SIGNAL answer(integer, integer), info1(integer);
+SIGNAL dropData(integer);
+</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB5" type="sdlPrcs" xCenter="308" yCenter="220" fixedDimensions="FALSE" width="154" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>pNube(0, NUM_P)</Text>
 </Symbol>
 </Symbol>
 
@@ -33,8 +39,8 @@ SIGNAL dropData;</Text>
 <Text>cSerNube</Text>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="w" position="-0.00516129032258" endType="midarrow">
 <Text id="1">[requestInfo,
-errorFound,
-tiempo]
+tiempo,
+errorFound]
 </Text>
 <Text id="2">cSerNube
 </Text>
@@ -83,6 +89,23 @@ dropData]
 <LinkSegment orientation="h" length="275"/>
 <LinkSegment orientation="v" length="-253"/>
 <LinkSegment orientation="h" length="253"/>
+
+</Link>
+
+<Link linkId="LINK17" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cProcNube</Text>
+<Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[ansRequest]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB5" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[answer, info1,
+errorFound]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="-165"/>
 
 </Link>
 </DiagramPartition>

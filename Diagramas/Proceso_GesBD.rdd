@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
+<SdlFSMPartition name="" needs_cleanup="FALSE">
+<SdlFSMSymbol identifier="SYM18" type="sdlText" text="DCL
+  n INTEGER,
+  informacion info,
+  requerimiento request;" outline_color="-" background_color="-" center_coordinates="765 166" dimensions="190 78" attached_symbol_id=""/>
+<NonStateTransition top_left_coordinates="34 42">
+<SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="128 57" dimensions="60 30" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM2" type="sdlState" text="Comunicaciones_GesBD" outline_color="-" background_color="-" center_coordinates="128 104" dimensions="160 40" attached_symbol_id=""/>
+</Transition>
+</NonStateTransition>
+<StateTransitionBlock top_left_coordinates="34 84">
+<SdlFSMSymbolReference identifier="SYM2"/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM3" type="sdlInputSig" text="sendInfo(informacion, n)" outline_color="-" background_color="-" center_coordinates="128 156" dimensions="188 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM4" type="sdlSendSig" text="tiempo(n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="128 208" dimensions="166 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM5" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="128 260" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM6" type="sdlInputSig" text="isInfo(requerimiento, n)" outline_color="-" background_color="-" center_coordinates="330 156" dimensions="188 40" attached_symbol_id=""/>
+<Transition>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM7" type="sdlDecision" text="requerimiento = get OR
+requerimiento = read" outline_color="-" background_color="-" center_coordinates="330 212" dimensions="174 48" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM8" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="330 268" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM10" type="sdlSendSig" text="answer(1, n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="330 320" dimensions="188 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM13" type="sdlSendSig" text="info1(n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="330 372" dimensions="160 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM14" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="330 424" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM9" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="464 268" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM15" type="sdlSendSig" text="answer(0, n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="330 488" dimensions="188 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM16" type="sdlSendSig" text="errorFound(n) VIA cProcBD" outline_color="-" background_color="-" center_coordinates="330 540" dimensions="196 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM17" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="330 592" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM11" type="sdlInputSig" text="dropData(n)" outline_color="-" background_color="-" center_coordinates="552 156" dimensions="96 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM12" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="552 208" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.0" bottomMargin="1.0" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+</SdlFSMPartition>
+</SdlFSMDiagram>
