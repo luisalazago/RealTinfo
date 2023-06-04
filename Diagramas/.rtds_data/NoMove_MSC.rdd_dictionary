@@ -46,14 +46,12 @@
 <AlternateType type="block"/>
 <UsingSymbols>
 <SymbolReference symbolId="_LIFELINE_5"/>
-<SymbolReference symbolId="_LIFELINE_4"/>
 </UsingSymbols>
 </Item>
 <Item id="ITEM8" type="process" name="Servidor" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <AlternateType type="system"/>
 <AlternateType type="block"/>
 <UsingSymbols>
-<SymbolReference symbolId="_LIFELINE_5"/>
 <SymbolReference symbolId="_LIFELINE_6"/>
 </UsingSymbols>
 </Item>

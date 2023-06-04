@@ -11,7 +11,6 @@
 <UsingSymbols>
 <SymbolReference symbolId="_LIFELINE_4"/>
 <SymbolReference symbolId="_LIFELINE_1"/>
-<SymbolReference symbolId="_LIFELINE_8"/>
 <SymbolReference symbolId="_LIFELINE_3"/>
 </UsingSymbols>
 </Item>
@@ -27,7 +26,6 @@
 <AlternateType type="system"/>
 <AlternateType type="block"/>
 <UsingSymbols>
-<SymbolReference symbolId="_LIFELINE_5"/>
 <SymbolReference symbolId="_LIFELINE_6"/>
 <SymbolReference symbolId="_LIFELINE_0"/>
 <SymbolReference symbolId="_LIFELINE_3"/>

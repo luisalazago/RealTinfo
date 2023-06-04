@@ -10,7 +10,6 @@
 <AlternateType type="block"/>
 <UsingSymbols>
 <SymbolReference symbolId="_LIFELINE_1"/>
-<SymbolReference symbolId="_LIFELINE_8"/>
 </UsingSymbols>
 </Item>
 <Item id="ITEM3" type="process" name="Base de Datos" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
@@ -18,7 +17,6 @@
 <AlternateType type="block"/>
 <UsingSymbols>
 <SymbolReference symbolId="_LIFELINE_5"/>
-<SymbolReference symbolId="_LIFELINE_4"/>
 <SymbolReference symbolId="_LIFELINE_2"/>
 </UsingSymbols>
 </Item>
@@ -33,7 +31,6 @@
 <AlternateType type="system"/>
 <AlternateType type="block"/>
 <UsingSymbols>
-<SymbolReference symbolId="_LIFELINE_5"/>
 <SymbolReference symbolId="_LIFELINE_6"/>
 <SymbolReference symbolId="_LIFELINE_3"/>
 </UsingSymbols>
@@ -43,7 +40,6 @@
 <AlternateType type="block"/>
 <UsingSymbols>
 <SymbolReference symbolId="_LIFELINE_4"/>
-<SymbolReference symbolId="_LIFELINE_6"/>
 </UsingSymbols>
 </Item>
 </DictionaryObjects>
