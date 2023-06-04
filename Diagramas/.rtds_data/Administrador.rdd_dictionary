@@ -32,7 +32,7 @@
 </ReceivedSignals>
 </SignalWindow>
 <Channel name="cMundoSoporte1" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
-<Channel name="(cSerAdmin1)" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW4"/>
+<Channel name="cSerAdmin1" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW4"/>
 </Item>
 <Item id="ITEM2" type="process" name="Proceso_Administrador" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>

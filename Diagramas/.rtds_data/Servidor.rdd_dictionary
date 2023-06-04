@@ -24,7 +24,7 @@
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK24" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK25" isFrom="TRUE"/>
 <Connections>
 <Connection name="cSerAdmin"/>
 </Connections>
@@ -34,7 +34,7 @@
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW5" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK22" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK27" isFrom="TRUE"/>
 <Connections>
 <Connection name="cSerNube"/>
 </Connections>
@@ -51,7 +51,7 @@
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW6" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK23" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK26" isFrom="TRUE"/>
 <Connections>
 <Connection name="cControSer"/>
 </Connections>
@@ -72,14 +72,14 @@
 <SymbolReference symbolId="SYMB2"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW1" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK24" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK25" isFrom="FALSE"/>
 <SentSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
 </SentSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW2" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK22" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK27" isFrom="FALSE"/>
 <SentSignals>
 <SignalReference id="SIG3"/>
 <SignalReference id="SIG4"/>
@@ -93,7 +93,7 @@
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW3" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK23" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK26" isFrom="FALSE"/>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG3"/>

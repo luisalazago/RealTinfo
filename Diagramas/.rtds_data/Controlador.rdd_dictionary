@@ -11,9 +11,7 @@
 </Signal>
 <Signal id="SIG4" name="turnCamera">
 </Signal>
-<Signal id="SIG5" name="busy">
-</Signal>
-<Signal id="SIG6" name="move">
+<Signal id="SIG5" name="move">
 </Signal>
 <Item id="ITEM1" type="block" name="Controlador" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
@@ -28,12 +26,10 @@
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
 <SignalReference id="SIG5"/>
-<SignalReference id="SIG6"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG3"/>
 <SignalReference id="SIG4"/>
-<SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW3" insideDiagram="TRUE">
@@ -68,13 +64,11 @@
 <SentSignals>
 <SignalReference id="SIG3"/>
 <SignalReference id="SIG4"/>
-<SignalReference id="SIG5"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG1"/>
 <SignalReference id="SIG2"/>
 <SignalReference id="SIG5"/>
-<SignalReference id="SIG6"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>

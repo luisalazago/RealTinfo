@@ -36,7 +36,8 @@
 </Link>
 
 <Link linkId="LINK1" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>(cSerAdmin1)</Text>
+<Text>cSerAdmin1
+</Text>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[warning, errorFound]
 </Text>

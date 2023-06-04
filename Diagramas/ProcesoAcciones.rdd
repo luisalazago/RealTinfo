@@ -10,18 +10,16 @@ SIGNAL td;
 /*Last time to drop the Data Base*/
 SIGNAL lt;
 
-TIMER avisarUsuario, matarBD;" outline_color="-" background_color="-" center_coordinates="181 958" dimensions="314 118" attached_symbol_id=""/>
+TIMER avisarUsuario, matarBD;" outline_color="-" background_color="-" center_coordinates="198 618" dimensions="316 120" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM27" type="sdlComment" text="lt goes to the block Nube, then the process inside Nube
-send the signal to drop specific the database" outline_color="-" background_color="-" center_coordinates="625 1127" dimensions="404 48" attached_symbol_id=""/>
+send the signal to drop specific the database" outline_color="-" background_color="-" center_coordinates="932 618" dimensions="406 50" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM28" type="sdlText" text="/*Variables*/
 DCL
     requerimiento request,
     informacion info,
     dispositivo device,
     segnal senal,
-    tt t,
-    flag2 INTEGER := 0;" outline_color="-" background_color="-" center_coordinates="558 966" dimensions="202 132" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM49" type="sdlComment" text="83 is the time (90 days) but one week before." outline_color="-" background_color="-" center_coordinates="198 1095" dimensions="334 40" attached_symbol_id=""/>
+    flag2 INTEGER := 0;" outline_color="-" background_color="-" center_coordinates="561 617" dimensions="204 120" attached_symbol_id=""/>
 <NonStateTransition top_left_coordinates="45 27">
 <SdlFSMSymbol identifier="SYM57" type="sdlStart" outline_color="-" background_color="-" center_coordinates="174 42" dimensions="60 30" attached_symbol_id=""/>
 <Transition>
@@ -90,7 +88,7 @@ DCL
 <NormalStateTransition>
 <SdlFSMSymbol identifier="SYM120" type="sdlInputSig" text="matarBD" outline_color="-" background_color="-" center_coordinates="1691 141" dimensions="68 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM125" type="sdlTask" text="flag2 := 0;" outline_color="-" background_color="-" center_coordinates="1691 193" dimensions="98 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM125" type="sdlTask" text="flag2 := 0;" outline_color="-" background_color="-" center_coordinates="1691 193" dimensions="96 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM122" type="sdlSendSig" text="lt VIA cSerNube" outline_color="-" background_color="-" center_coordinates="1691 245" dimensions="124 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM124" type="sdlState" text="-" outline_color="-" background_color="-" center_coordinates="1691 297" dimensions="60 40" attached_symbol_id=""/>
 </Transition>
