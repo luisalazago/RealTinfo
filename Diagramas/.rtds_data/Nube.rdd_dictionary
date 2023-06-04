@@ -12,9 +12,9 @@
 <SymbolReference symbolId="SYMB4" positions="1,7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG10" name="td">
+<Signal id="SIG10" name="lt">
 </Signal>
-<Signal id="SIG11" name="lt">
+<Signal id="SIG11" name="ansRequest">
 </Signal>
 <Signal id="SIG2" name="info1">
 <SignalParameterType>integer</SignalParameterType>
@@ -38,9 +38,9 @@
 </Signal>
 <Signal id="SIG7" name="isInfo">
 </Signal>
-<Signal id="SIG8" name="ansRequest">
+<Signal id="SIG8" name="requestInfo">
 </Signal>
-<Signal id="SIG9" name="requestInfo">
+<Signal id="SIG9" name="td">
 </Signal>
 <Item id="ITEM1" type="block" name="Nube" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
@@ -54,11 +54,11 @@
 <SentSignals>
 <SignalReference id="SIG6"/>
 <SignalReference id="SIG7"/>
+<SignalReference id="SIG9"/>
 <SignalReference id="SIG10"/>
-<SignalReference id="SIG11"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG9"/>
+<SignalReference id="SIG8"/>
 <SignalReference id="SIG5"/>
 <SignalReference id="SIG4"/>
 </ReceivedSignals>
@@ -69,17 +69,17 @@
 <Connection name="cMundo"/>
 </Connections>
 <SentSignals>
-<SignalReference id="SIG9"/>
+<SignalReference id="SIG8"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG8"/>
-<SignalReference id="SIG10"/>
+<SignalReference id="SIG11"/>
+<SignalReference id="SIG9"/>
 </ReceivedSignals>
 </SignalWindow>
-<Channel name="cProcBD" fromSignalWindow="SIGWDW5" toSignalWindow="SIGWDW1"/>
-<Channel name="cProcNube" fromSignalWindow="SIGWDW6" toSignalWindow="SIGWDW2"/>
-<Channel name="cSerNube" fromSignalWindow="SIGWDW7" toSignalWindow="SIGWDW3"/>
-<Channel name="cServUser" fromSignalWindow="SIGWDW8" toSignalWindow="SIGWDW4"/>
+<Channel name="cProcBD" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW1"/>
+<Channel name="cSerNube" fromSignalWindow="SIGWDW7" toSignalWindow="SIGWDW2"/>
+<Channel name="cServUser" fromSignalWindow="SIGWDW8" toSignalWindow="SIGWDW3"/>
+<Channel name="cProcNube" fromSignalWindow="SIGWDW5" toSignalWindow="SIGWDW6"/>
 </Item>
 <Item id="ITEM2" type="type" name="integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
@@ -108,26 +108,7 @@
 </ReceivedSignals>
 </SignalWindow>
 </Item>
-<Item id="ITEM4" type="process" name="pNube" parentId="ITEM1" scope="none" minInstances="0" maxInstances="NUM_P" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYMB5"/>
-</DefiningSymbols>
-<UsingSymbols>
-<SymbolReference symbolId="SYMB5"/>
-</UsingSymbols>
-<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK17" isFrom="FALSE"/>
-<SentSignals>
-<SignalReference id="SIG8"/>
-</SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG1"/>
-<SignalReference id="SIG2"/>
-<SignalReference id="SIG4"/>
-</ReceivedSignals>
-</SignalWindow>
-</Item>
-<Item id="ITEM5" type="process" name="Proceso_BD" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM4" type="process" name="Proceso_BD" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB2"/>
 </DefiningSymbols>
@@ -135,16 +116,6 @@
 <SymbolReference symbolId="SYMB2"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK14" isFrom="FALSE"/>
-<SentSignals>
-<SignalReference id="SIG8"/>
-<SignalReference id="SIG10"/>
-</SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG9"/>
-</ReceivedSignals>
-</SignalWindow>
-<SignalWindow id="SIGWDW5" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK16" isFrom="TRUE"/>
 <SentSignals>
 <SignalReference id="SIG6"/>
@@ -158,7 +129,7 @@
 <SignalReference id="SIG5"/>
 </ReceivedSignals>
 </SignalWindow>
-<SignalWindow id="SIGWDW6" insideDiagram="FALSE">
+<SignalWindow id="SIGWDW5" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK17" isFrom="TRUE"/>
 <SentSignals>
 <SignalReference id="SIG1"/>
@@ -166,21 +137,50 @@
 <SignalReference id="SIG4"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG8"/>
+<SignalReference id="SIG11"/>
 </ReceivedSignals>
 </SignalWindow>
-<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK13" isFrom="FALSE"/>
 <SentSignals>
-<SignalReference id="SIG9"/>
+<SignalReference id="SIG8"/>
 <SignalReference id="SIG5"/>
 <SignalReference id="SIG4"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG6"/>
 <SignalReference id="SIG7"/>
+<SignalReference id="SIG9"/>
 <SignalReference id="SIG10"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK14" isFrom="FALSE"/>
+<SentSignals>
 <SignalReference id="SIG11"/>
+<SignalReference id="SIG9"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG8"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM5" type="process" name="pNube" parentId="ITEM1" scope="none" minInstances="0" maxInstances="NUM_P" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB5"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB5"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW6" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK17" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG11"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG4"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>

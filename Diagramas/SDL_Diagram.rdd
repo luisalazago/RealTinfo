@@ -142,7 +142,7 @@ errorFound, tiempo]
 <Description></Description>
 <Text></Text>
 
-<Symbol symbolId="SYMB28" type="sdlText" xCenter="286" yCenter="154" fixedDimensions="TRUE" width="528" height="132" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB28" type="sdlText" xCenter="286" yCenter="88" fixedDimensions="TRUE" width="528" height="132" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Signals of the system */
 SIGNAL move(boolean, integer), warning(device, senal, integer);
@@ -154,7 +154,7 @@ SIGNAL errorFound(integer);
 SIGNAL turnCamera(boolean, integer), turnMic(boolean, integer);</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB29" type="sdlText" xCenter="748" yCenter="341" fixedDimensions="FALSE" width="330" height="550" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB29" type="sdlText" xCenter="264" yCenter="407" fixedDimensions="FALSE" width="352" height="484" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>/* Definition of the types */
 
@@ -180,11 +180,6 @@ NEWTYPE ans
   LITERALS errores, respuesta;
 ENDNEWTYPE;
 
-SYNTYPE t = INTEGER
-  DEFAULT 0
-  CONSTANTS 0:90
-ENDSYNTYPE;
-
 SYNTYPE indexP = INTEGER
   DEFAULT 1;
   CONSTANTS 1..NUM_P
@@ -192,7 +187,8 @@ ENDSYNTYPE;
 
 NEWTYPE pArray
   ARRAY(indexP, PID);
-ENDNEWTYPE;</Text>
+ENDNEWTYPE;
+</Text>
 </Symbol>
 </Symbol>
 </DiagramPartition>
